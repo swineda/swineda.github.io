@@ -1,0 +1,182 @@
+.CartConfirm-modal-container {
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 1;
+
+    height: 100vh;
+    width: 375px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: stretch; */
+}
+
+.CartConfirm-modal-title-container {
+    display: flex;
+    align-items: center;
+
+    height: 64px;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 16px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.CartConfirm-modal-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.CartConfirm-modal-title-container > * {
+    height: 49.71px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid red; */
+    font-size: 19px;
+    text-decoration: none;
+}
+.CartConfirm-modal-title-container > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    background-color: #f7f7f7;
+    font-size: 20px;
+    cursor: pointer;
+}
+.CartConfirm-modal-title-container > div:hover {
+    background-color: #d6d6d6;
+}
+
+
+
+.CartConfirm-modal-title-container-no-session {
+    display: flex;
+    align-items: center;
+
+    height: 64px;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 16px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    /* background-color: red; */
+}
+
+.CartConfirm-modal-title-container-no-session{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+.CartConfirm-modal-title-container-no-session {
+    height: 59.71px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: red; */
+}
+.CartConfirm-modal-title-container-no-session > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    background-color: #f7f7f7;
+    font-size: 20px;
+    cursor: pointer;
+}
+.CartConfirm-modal-title-container-no-session > div:hover {
+    background-color: #d6d6d6;
+}
+.CartConfirm-modal-no-session-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+
+
+.CartConfirm-modal-body-container {
+    padding:16px
+}
+
+.CartConfirm-modal-product-details {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#CartConfirm-modal-product-thumbnail{
+    width: 100px;
+}
+#CartConfirm-modal-product-name {
+    width: 231px;
+}
+
+.CartConfirm-modal-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.CartConfirm-button {
+    width: 343px;
+    height: 44px;
+
+    border-radius: 4px;
+    border: 0px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+#CartConfirm-shopping-button {
+    /* background-color: #0D08F5; */
+    margin-top: 33px;
+    background-color: rgb(204, 0, 0);
+
+    color: white;
+    font-weight: bold;
+}
+
+#CartConfirm-shopping-button:hover {
+    background-color: #aa0200;
+}
+
+#CartConfirm-checkout-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid rgb(136, 136, 136);
+}
+#CartConfirm-checkout-button:hover {
+    background-color: #f7f7f7;
+}

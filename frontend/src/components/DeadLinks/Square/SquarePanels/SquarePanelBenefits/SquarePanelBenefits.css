@@ -1,0 +1,137 @@
+.SquarePanelBenefits-component {
+    width: 100vw;
+    /* max-width: 1400px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SquarePanelBenefits-content-component {
+    width: 100vw;
+    max-width: 1400px;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+#SquarePanelBenefits-superscript {
+    font-size: 10px;
+    color: #666;
+    text-decoration: underline;
+}
+
+
+/********** HEADER **********/
+.SquarePanelBenefits-header-container {
+    width: 100%;
+    text-align: center;
+
+    color: #333;
+}
+
+.SquarePanelBenefits-header-container > h2 {
+    margin: 0px 0px 4px;
+
+    font-size: 29px;
+}
+
+.SquarePanelBenefits-header-container > p {
+    font-size: 16px;
+}
+.SquarePanelBenefits-header-container > p > u{
+    color: #666;
+}
+
+
+/********** CARDS **********/
+.SquarePanelBenefits-cards-container {
+    margin: 0px 220px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.SquarePanelBenefits-cards-container-line-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.SquarePanelBenefits-cards-container-line-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Cards: shared properties */
+.SquarePanelBenefits-card {
+    margin: 17px;
+    width: 100%;
+    background-color: #f7f7f7;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 3px 4px, rgb(0 0 0 / 6%) 0px 1px 2px, rgb(0 0 0 / 6%) 0px -1px 2px;
+
+    padding: 16px 32px 20px;
+}
+.SquarePanelBenefits-card > h3 {
+    margin: 0px 0px 8px;
+
+    font-size: 23px;
+    color: #333;
+}
+.SquarePanelBenefits-card > p {
+    margin: 0px 0px 8px;
+
+    font-size: 14px;
+    color: #333;
+}
+.SquarePanelBenefits-card > span {
+    margin: 0px 0px 8px;
+
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+}
+#Square-benefits-icon-container {
+    width: 116px;
+    height: 116px;
+
+    padding-bottom: 16px;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Square-benefits-icon {
+    width: 180px;
+    object-fit: contain;
+}
+
+/* Exceptions */
+/* Line 1 */
+.line-1A-text-body {
+    width: 300px;
+}
+.line-1B-text-body {
+    width: 260px;
+}
+
+/* Line 2 */
+.line-2-header {
+    width: 200.66px;
+}
+.line-2C-text-body {
+    width: 230.67px;
+}
+#SquarePanelBenefits-card-2C {
+    padding: 16px 25.5px 20px;
+}

@@ -1,0 +1,54 @@
+.AddToCart-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: rgb(204, 0, 0);
+    font-weight: 700px;
+    color: #fff;
+
+    cursor: pointer;
+}
+.AddToCart-button:hover {
+    background-color: #aa0200;
+}
+.AddToCart-button:active {
+    text-decoration: underline;
+}
+
+
+/********** CONDITIONAL STYLING PER COMPONENT **********/
+#DepartmentPage-AddToCart-button {
+    height: 32px;
+    width: 68px;
+    margin: 15px 0px;
+    font-size: 12px;
+}
+
+#ProductPage-AddToCart-button {
+    height: 44px;
+    width: 444px;
+    margin: 15px 0px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#UserFavorites-AddToCart-button {
+    height: 32px;
+    width: 82.3594px;
+    margin: 15px 0px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#CartFavorites-AddToCart-button {
+    height: 32px;
+    width: 82.36px;
+    padding: 0px 8px;
+    font-size: 12px;
+    font-weight: 700;
+}

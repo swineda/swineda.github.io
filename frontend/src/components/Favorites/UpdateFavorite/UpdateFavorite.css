@@ -1,0 +1,29 @@
+.favorite-button {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 0px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 100%;
+    background-color: #fff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+#CartFavorites-UpdateFavorite-button {
+    border: none;
+    font-size: 24px;
+}
+
+#is-favorite {
+    color: #cc0100;
+}
+
+#is-not-favorite {
+    color: black;
+}

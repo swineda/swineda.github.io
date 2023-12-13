@@ -1,0 +1,265 @@
+.Checkout-page-wrapper-container {
+    display: flex;
+    justify-content: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #f7f7f7;
+}
+
+#Checkout-component {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+
+    margin: 0px;
+    /* padding: 0px 20px; */
+
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: red; */
+}
+
+/****************** CARD SHARED STYLING ******************/
+.Checkout-product-list-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding-bottom: 16px;
+}
+
+
+/****************** CART CARD ******************/
+.Checkout-product-list-card {
+    height: fit-content;
+    width: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 16px;
+    padding: 16px;
+    border-radius: 6px;
+
+    background-color: #fff;
+    color: #333;
+
+
+    box-shadow: rgb(0 0 0 / 4%) 0px 6px 12px 4px, rgb(0 0 0 / 4%) 0px 4px 10px 2px, rgb(0 0 0 / 6%) 0px 2px 8px, rgb(0 0 0 / 4%) 0px 2px 4px;
+}
+.Checkout-product-list-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Checkout-cart-icon {
+    width: 40px;
+    color: rgb(204, 0, 0);
+    font-size: 24px;
+    padding-right: 12px;
+}
+.Checkout-product-list-header{
+    font-size: 19px;
+    font-weight: 700;
+}
+.Checkout-details-container {
+    font-size: 14px;
+    color: #666;
+
+    display: flex;
+    flex-direction: row;
+}
+.Checkout-details-container > div {
+    padding: 2px 5px 5px 0px;
+}
+#Checkout-edit-button {
+    font-size: 16px;
+    color: #666;
+}
+#Checkout-edit-button:hover{
+    color: #333;
+    text-decoration: none;
+}
+
+.shipping-ETA-container {
+    font-size: 16px;
+    color: #008300;
+    margin-top: 20px;
+}
+
+
+/****************** SHIPPING ADDRESS CARD ******************/
+#shipping-address-card-header {
+    padding-bottom: 5px;
+}
+
+.card-icon {
+    width: 32px;
+    margin-right: 20px;
+}
+
+.shipping-address > p {
+    margin: 0px;
+    padding-bottom: 2.5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.default-address-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 101.64px;
+    height: 26.14px;
+    border-radius: 4px;
+    margin-top: 4px;
+
+    font-size: 12px;
+    color: #008300;
+    border: 0.5px solid #008300;
+    background-color: #ecf9ec;
+}
+
+/****************** PAYMENT INFO CARD ******************/
+.payment-information {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+
+    color: #333;
+    font-size: 16px;
+}
+.redCard-icon {
+    width: 40px;
+    margin-right: 15px;
+}
+
+
+/****************** ORDER SUMMARY CARD ******************/
+.Checkout-total-container {
+    height: fit-content;
+    width: 375px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 16px;
+    padding: 16px;
+    border-radius: 6px;
+
+    background-color: #fff;
+    color: #333;
+
+    box-shadow: rgb(0 0 0 / 4%) 0px 6px 12px 4px, rgb(0 0 0 / 4%) 0px 4px 10px 2px, rgb(0 0 0 / 6%) 0px 2px 8px, rgb(0 0 0 / 4%) 0px 2px 4px;
+}
+
+.Checkout-subtotal-breakdown {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 12px;
+}
+#redCard-discount-subtext {
+    font-size: 12px;
+    color: #333;
+    padding: 2.5px 0px;
+    margin: 0px 0px 8px 12px;
+}
+.redCard-discount {
+    font-size: 16px;
+    color: #CC0000;
+}
+
+.payment-confirmation-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 16px 0px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.payment-confirmation-container > div > p {
+    margin: 0px;
+    padding: 0px;
+}
+#payment-confirmation-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 2.5px;
+}
+#payment-confirmation-method {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.Checkout-checkout-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Checkout-checkout-button {
+    width: 343px;
+    height: 44px;
+
+    border-radius: 4px;
+    border: 0px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    background-color: rgb(204, 0, 0);
+
+    color: white;
+    font-weight: bold;
+}
+
+#Checkout-checkout-button:hover {
+    background-color: #aa0200;
+}
+
+.Checkout-disclaimer-wrapper {
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    margin: 16px 0px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Checkout-disclaimer {
+    width: 330px;
+}
+
+
+.product-list-thumbnail-container {
+    padding-top: 16px;
+}
+.product-list-thumbnail {
+    width: 60px;
+    padding-right: 8px;
+}

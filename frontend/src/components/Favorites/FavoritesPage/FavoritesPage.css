@@ -1,0 +1,149 @@
+.UserFavorites-page-wrapper-container {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0px;
+    padding-top: 20px;
+
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    /* background: yellow; */
+}
+
+#UserFavorites-component {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    /* border: 1px solid red; */
+    /* background: blue; */
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#UserFavorites-component-empty {
+    width: 100%;
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    /* border: 1px solid red; */
+    /* background: blue; */
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+/********** TITLE **********/
+.UserFavorites-title {
+    font-size: 29px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 34px;
+}
+
+#heart-icon-UserFavorites {
+    color: #cc0100;
+    font-size: 27px;
+}
+
+#UserFavorites-directory-container {
+    width:  100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+#UserFavorites-directory-container > * {
+    padding-right: 4px;
+}
+#UserFavorites-directory-container > a {
+    color: #666;
+    padding-right: 4px;
+}
+#UserFavorites-directory-container > a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/**********  NO FAVORITES **********/
+.no-favorites-message-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.no-favorites-message-container > * {
+    margin: 0px;
+}
+
+#heart-icon-UserFavorites-no-favorites {
+    color: #cc0100;
+    font-size: 115px;
+}
+
+.no-favorites-message-title{
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.no-favorites-message-main {
+    width: 650px;
+    text-align: center;
+    padding: 12px 0px 45px;
+}
+
+.no-favorites-message-subtext {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.no-favorites-message-suggested-categories {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.no-favorites-message-suggested-categories > a {
+    margin: 0px 5px;
+    padding: 10px 20px;
+
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 4px;
+    background-color: white;
+
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+.no-favorites-message-suggested-categories > a:hover {
+    background-color: #f7f7f7;
+    text-decoration: underline;
+}
+
+
+/* Following properties are imported from Departments/DepartmentPage.css */
+/******************** START SHARE ********************/
+
+/******************** END SHARE ********************/

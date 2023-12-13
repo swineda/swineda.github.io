@@ -1,0 +1,1000 @@
+2022-11-28T18:25:43.334627+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:25:43.334627+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:25:43.334627+00:00 app[web.1]: User: {
+2022-11-28T18:25:43.334628+00:00 app[web.1]: id: 14,
+2022-11-28T18:25:43.334628+00:00 app[web.1]: firstName: 'Nick',
+2022-11-28T18:25:43.334628+00:00 app[web.1]: lastName: 'Esqueda',
+2022-11-28T18:25:43.334628+00:00 app[web.1]: username: 'nesqueda'
+2022-11-28T18:25:43.334629+00:00 app[web.1]: }
+2022-11-28T18:25:43.334629+00:00 app[web.1]: }
+2022-11-28T18:25:43.334629+00:00 app[web.1]: ]
+2022-11-28T18:25:43.335031+00:00 app[web.1]: [0mGET /api/products/35/reviews [36m304[0m 8.847 ms - -[0m
+2022-11-28T18:25:43.336753+00:00 heroku[router]: at=info method=GET path="/api/products/35/reviews" host=kl-market.herokuapp.com request_id=a028c2a8-27a1-440f-ae39-b3f598a231b5 fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=304 bytes=195 protocol=https
+2022-11-28T18:25:57.652184+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:25:57.655046+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:25:57.655981+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 25.730 ms - -[0m
+2022-11-28T18:25:57.657742+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=c898f6bd-a968-4a01-895e-a4474097d86f fwd="71.212.148.2" dyno=web.1 connect=0ms service=27ms status=304 bytes=195 protocol=https
+2022-11-28T18:25:59.159818+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:25:59.160985+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '8';
+2022-11-28T18:25:59.161958+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '8';
+2022-11-28T18:25:59.163157+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 48 LIMIT 1;
+2022-11-28T18:25:59.164225+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 49 LIMIT 1;
+2022-11-28T18:25:59.165028+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 50 LIMIT 1;
+2022-11-28T18:25:59.165862+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 51 LIMIT 1;
+2022-11-28T18:25:59.166648+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 52 LIMIT 1;
+2022-11-28T18:25:59.167619+00:00 app[web.1]: [0mGET /api/departments/8/products [36m304[0m 8.510 ms - -[0m
+2022-11-28T18:25:59.170023+00:00 heroku[router]: at=info method=GET path="/api/departments/8/products" host=kl-market.herokuapp.com request_id=2d9b2ad2-7ac4-47ae-abf1-8ceccffbb80e fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=304 bytes=195 protocol=https
+2022-11-28T18:26:00.187548+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:00.190451+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '49';
+2022-11-28T18:26:00.193124+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:00.194309+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '49' ORDER BY "Review"."id" DESC;
+2022-11-28T18:26:00.196334+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '49';
+2022-11-28T18:26:00.196513+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:00.196514+00:00 app[web.1]: {
+2022-11-28T18:26:00.196514+00:00 app[web.1]: id: 131,
+2022-11-28T18:26:00.196514+00:00 app[web.1]: productId: 49,
+2022-11-28T18:26:00.196515+00:00 app[web.1]: userId: 24,
+2022-11-28T18:26:00.196515+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:00.196515+00:00 app[web.1]: title: 'Meow',
+2022-11-28T18:26:00.196516+00:00 app[web.1]: description: 'My cats love it. They have been eating Meow mix for 8+ years.',
+2022-11-28T18:26:00.196516+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.196517+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:00.196517+00:00 app[web.1]: }
+2022-11-28T18:26:00.196517+00:00 app[web.1]: ]
+2022-11-28T18:26:00.198278+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 24;
+2022-11-28T18:26:00.201568+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '49';
+2022-11-28T18:26:00.201751+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:00.201752+00:00 app[web.1]: {
+2022-11-28T18:26:00.201752+00:00 app[web.1]: id: 131,
+2022-11-28T18:26:00.201752+00:00 app[web.1]: productId: 49,
+2022-11-28T18:26:00.201753+00:00 app[web.1]: userId: 24,
+2022-11-28T18:26:00.201753+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:00.201753+00:00 app[web.1]: title: 'Meow',
+2022-11-28T18:26:00.201754+00:00 app[web.1]: description: 'My cats love it. They have been eating Meow mix for 8+ years.',
+2022-11-28T18:26:00.201754+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.201755+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.201755+00:00 app[web.1]: User: {
+2022-11-28T18:26:00.201756+00:00 app[web.1]: id: 24,
+2022-11-28T18:26:00.201756+00:00 app[web.1]: firstName: 'Rawaha',
+2022-11-28T18:26:00.201756+00:00 app[web.1]: lastName: 'Memon',
+2022-11-28T18:26:00.201756+00:00 app[web.1]: username: 'rmemon'
+2022-11-28T18:26:00.201756+00:00 app[web.1]: }
+2022-11-28T18:26:00.201757+00:00 app[web.1]: }
+2022-11-28T18:26:00.201757+00:00 app[web.1]: ]
+2022-11-28T18:26:00.202195+00:00 app[web.1]: [0mGET /api/products/49/reviews [32m200[0m 15.489 ms - 310[0m
+2022-11-28T18:26:00.202678+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '49';
+2022-11-28T18:26:00.203566+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 8;
+2022-11-28T18:26:00.203974+00:00 heroku[router]: at=info method=GET path="/api/products/49/reviews" host=kl-market.herokuapp.com request_id=0460b88c-c911-4874-a1d8-cb876b678d4c fwd="71.212.148.2" dyno=web.1 connect=0ms service=16ms status=200 bytes=563 protocol=https
+2022-11-28T18:26:00.204312+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '49';
+2022-11-28T18:26:00.205143+00:00 app[web.1]: [0mGET /api/products/49 [32m200[0m 14.023 ms - 1052[0m
+2022-11-28T18:26:00.213564+00:00 heroku[router]: at=info method=GET path="/api/products/49" host=kl-market.herokuapp.com request_id=11e84d9a-a24b-4239-96e0-9ae72124e4b2 fwd="71.212.148.2" dyno=web.1 connect=0ms service=22ms status=200 bytes=1306 protocol=https
+2022-11-28T18:26:00.287356+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:00.290612+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '49';
+2022-11-28T18:26:00.291283+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '49' ORDER BY "Review"."id" DESC;
+2022-11-28T18:26:00.292426+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:00.292427+00:00 app[web.1]: {
+2022-11-28T18:26:00.292427+00:00 app[web.1]: id: 131,
+2022-11-28T18:26:00.292427+00:00 app[web.1]: productId: 49,
+2022-11-28T18:26:00.292428+00:00 app[web.1]: userId: 24,
+2022-11-28T18:26:00.292428+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:00.292428+00:00 app[web.1]: title: 'Meow',
+2022-11-28T18:26:00.292429+00:00 app[web.1]: description: 'My cats love it. They have been eating Meow mix for 8+ years.',
+2022-11-28T18:26:00.292429+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.292430+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:00.292430+00:00 app[web.1]: }
+2022-11-28T18:26:00.292430+00:00 app[web.1]: ]
+2022-11-28T18:26:00.292805+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 24;
+2022-11-28T18:26:00.293324+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:00.293324+00:00 app[web.1]: {
+2022-11-28T18:26:00.293324+00:00 app[web.1]: id: 131,
+2022-11-28T18:26:00.293324+00:00 app[web.1]: productId: 49,
+2022-11-28T18:26:00.293324+00:00 app[web.1]: userId: 24,
+2022-11-28T18:26:00.293325+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:00.293325+00:00 app[web.1]: title: 'Meow',
+2022-11-28T18:26:00.293325+00:00 app[web.1]: description: 'My cats love it. They have been eating Meow mix for 8+ years.',
+2022-11-28T18:26:00.293326+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.293326+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:00.293326+00:00 app[web.1]: User: {
+2022-11-28T18:26:00.293326+00:00 app[web.1]: id: 24,
+2022-11-28T18:26:00.293327+00:00 app[web.1]: firstName: 'Rawaha',
+2022-11-28T18:26:00.293327+00:00 app[web.1]: lastName: 'Memon',
+2022-11-28T18:26:00.293327+00:00 app[web.1]: username: 'rmemon'
+2022-11-28T18:26:00.293328+00:00 app[web.1]: }
+2022-11-28T18:26:00.293328+00:00 app[web.1]: }
+2022-11-28T18:26:00.293328+00:00 app[web.1]: ]
+2022-11-28T18:26:00.293681+00:00 app[web.1]: [0mGET /api/products/49/reviews [36m304[0m 7.070 ms - -[0m
+2022-11-28T18:26:00.295561+00:00 heroku[router]: at=info method=GET path="/api/products/49/reviews" host=kl-market.herokuapp.com request_id=90a0bf4c-c7cc-48bb-8619-9c63d03fef8c fwd="71.212.148.2" dyno=web.1 connect=0ms service=8ms status=304 bytes=195 protocol=https
+2022-11-28T18:26:03.487803+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:03.488827+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:26:03.489827+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 2.720 ms - -[0m
+2022-11-28T18:26:03.491545+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=004c01dc-92c9-4d56-9093-bce3491db55f fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=195 protocol=https
+2022-11-28T18:26:04.724828+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:04.726078+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '6';
+2022-11-28T18:26:04.726936+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '6';
+2022-11-28T18:26:04.727764+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 38 LIMIT 1;
+2022-11-28T18:26:04.728841+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 39 LIMIT 1;
+2022-11-28T18:26:04.729547+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 40 LIMIT 1;
+2022-11-28T18:26:04.730222+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 41 LIMIT 1;
+2022-11-28T18:26:04.730899+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 42 LIMIT 1;
+2022-11-28T18:26:04.731569+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 43 LIMIT 1;
+2022-11-28T18:26:04.732389+00:00 app[web.1]: [0mGET /api/departments/6/products [36m304[0m 8.310 ms - -[0m
+2022-11-28T18:26:04.734226+00:00 heroku[router]: at=info method=GET path="/api/departments/6/products" host=kl-market.herokuapp.com request_id=ee163f4c-852e-46e1-ac7b-accd59a45516 fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=304 bytes=195 protocol=https
+2022-11-28T18:26:06.115070+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:06.116071+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:06.116782+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '40';
+2022-11-28T18:26:06.117624+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '40' ORDER BY "Review"."id" DESC;
+2022-11-28T18:26:06.118204+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '40';
+2022-11-28T18:26:06.118498+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:06.118499+00:00 app[web.1]: {
+2022-11-28T18:26:06.118499+00:00 app[web.1]: id: 109,
+2022-11-28T18:26:06.118499+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.118500+00:00 app[web.1]: userId: 34,
+2022-11-28T18:26:06.118500+00:00 app[web.1]: rating: 2,
+2022-11-28T18:26:06.118500+00:00 app[web.1]: title: 'Review after using Meta Quest a couple of months',
+2022-11-28T18:26:06.118501+00:00 app[web.1]: description: "It's heavy, not comfortable with glasses, dizzy, not enough contents. The contents are selling but not satisfied when purchased. I didn't buy this for gaming.",
+2022-11-28T18:26:06.118501+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.118501+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.118502+00:00 app[web.1]: },
+2022-11-28T18:26:06.118502+00:00 app[web.1]: {
+2022-11-28T18:26:06.118502+00:00 app[web.1]: id: 108,
+2022-11-28T18:26:06.118502+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.118502+00:00 app[web.1]: userId: 28,
+2022-11-28T18:26:06.118502+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.118503+00:00 app[web.1]: title: 'Overly Surprised',
+2022-11-28T18:26:06.118503+00:00 app[web.1]: description: 'I owned the first Oculus (SDK) and years later got a Valve Index. I purchased the Quest for my kid and set it up for him. I am really surprised on the hardware, the tracking, the comfort, the roomscale drawing/layout, the battery, and over all product.',
+2022-11-28T18:26:06.118504+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.118504+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.118504+00:00 app[web.1]: },
+2022-11-28T18:26:06.118504+00:00 app[web.1]: {
+2022-11-28T18:26:06.118504+00:00 app[web.1]: id: 107,
+2022-11-28T18:26:06.118504+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.118504+00:00 app[web.1]: userId: 26,
+2022-11-28T18:26:06.118505+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.118505+00:00 app[web.1]: title: 'Hardware is fine',
+2022-11-28T18:26:06.118505+00:00 app[web.1]: description: 'I have a Rift S and just bought the Quest 2. I love the cordless thing but some changes to the software side would be nice. With the Rift S I can roam around in my VR home environment but with the Quest 2 I can only stand in one place.',
+2022-11-28T18:26:06.118505+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.118506+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.118506+00:00 app[web.1]: }
+2022-11-28T18:26:06.118506+00:00 app[web.1]: ]
+2022-11-28T18:26:06.118867+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 34;
+2022-11-28T18:26:06.119329+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '40';
+2022-11-28T18:26:06.119822+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 28;
+2022-11-28T18:26:06.120329+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '40';
+2022-11-28T18:26:06.120815+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 26;
+2022-11-28T18:26:06.121225+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 6;
+2022-11-28T18:26:06.121773+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:06.121774+00:00 app[web.1]: {
+2022-11-28T18:26:06.121774+00:00 app[web.1]: id: 109,
+2022-11-28T18:26:06.121774+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.121774+00:00 app[web.1]: userId: 34,
+2022-11-28T18:26:06.121774+00:00 app[web.1]: rating: 2,
+2022-11-28T18:26:06.121775+00:00 app[web.1]: title: 'Review after using Meta Quest a couple of months',
+2022-11-28T18:26:06.121775+00:00 app[web.1]: description: "It's heavy, not comfortable with glasses, dizzy, not enough contents. The contents are selling but not satisfied when purchased. I didn't buy this for gaming.",
+2022-11-28T18:26:06.121776+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121776+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121776+00:00 app[web.1]: User: {
+2022-11-28T18:26:06.121777+00:00 app[web.1]: id: 34,
+2022-11-28T18:26:06.121777+00:00 app[web.1]: firstName: 'Kevin',
+2022-11-28T18:26:06.121777+00:00 app[web.1]: lastName: 'Bartolome',
+2022-11-28T18:26:06.121777+00:00 app[web.1]: username: 'kbartolome'
+2022-11-28T18:26:06.121778+00:00 app[web.1]: }
+2022-11-28T18:26:06.121778+00:00 app[web.1]: },
+2022-11-28T18:26:06.121778+00:00 app[web.1]: {
+2022-11-28T18:26:06.121778+00:00 app[web.1]: id: 108,
+2022-11-28T18:26:06.121778+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.121778+00:00 app[web.1]: userId: 28,
+2022-11-28T18:26:06.121778+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.121778+00:00 app[web.1]: title: 'Overly Surprised',
+2022-11-28T18:26:06.121779+00:00 app[web.1]: description: 'I owned the first Oculus (SDK) and years later got a Valve Index. I purchased the Quest for my kid and set it up for him. I am really surprised on the hardware, the tracking, the comfort, the roomscale drawing/layout, the battery, and over all product.',
+2022-11-28T18:26:06.121779+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121779+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121780+00:00 app[web.1]: User: { id: 28, firstName: 'John', lastName: 'Lee', username: 'jlee' }
+2022-11-28T18:26:06.121780+00:00 app[web.1]: },
+2022-11-28T18:26:06.121780+00:00 app[web.1]: {
+2022-11-28T18:26:06.121780+00:00 app[web.1]: id: 107,
+2022-11-28T18:26:06.121781+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.121781+00:00 app[web.1]: userId: 26,
+2022-11-28T18:26:06.121781+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.121781+00:00 app[web.1]: title: 'Hardware is fine',
+2022-11-28T18:26:06.121781+00:00 app[web.1]: description: 'I have a Rift S and just bought the Quest 2. I love the cordless thing but some changes to the software side would be nice. With the Rift S I can roam around in my VR home environment but with the Quest 2 I can only stand in one place.',
+2022-11-28T18:26:06.121781+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121782+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.121782+00:00 app[web.1]: User: {
+2022-11-28T18:26:06.121782+00:00 app[web.1]: id: 26,
+2022-11-28T18:26:06.121782+00:00 app[web.1]: firstName: 'Daniel',
+2022-11-28T18:26:06.121782+00:00 app[web.1]: lastName: 'Flores',
+2022-11-28T18:26:06.121782+00:00 app[web.1]: username: 'dflores'
+2022-11-28T18:26:06.121782+00:00 app[web.1]: }
+2022-11-28T18:26:06.121783+00:00 app[web.1]: }
+2022-11-28T18:26:06.121783+00:00 app[web.1]: ]
+2022-11-28T18:26:06.122332+00:00 app[web.1]: [0mGET /api/products/40/reviews [32m200[0m 8.643 ms - 1437[0m
+2022-11-28T18:26:06.122899+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '40';
+2022-11-28T18:26:06.123930+00:00 app[web.1]: [0mGET /api/products/40 [32m200[0m 8.246 ms - 1195[0m
+2022-11-28T18:26:06.124074+00:00 heroku[router]: at=info method=GET path="/api/products/40/reviews" host=kl-market.herokuapp.com request_id=6434506d-daf7-4a05-9a87-ec1ee0677373 fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=200 bytes=1691 protocol=https
+2022-11-28T18:26:06.126590+00:00 heroku[router]: at=info method=GET path="/api/products/40" host=kl-market.herokuapp.com request_id=1ddd5b66-b811-47f2-9723-fca11026c0c1 fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=200 bytes=1449 protocol=https
+2022-11-28T18:26:06.201780+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:06.203339+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '40';
+2022-11-28T18:26:06.204082+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '40' ORDER BY "Review"."id" DESC;
+2022-11-28T18:26:06.204949+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:06.204950+00:00 app[web.1]: {
+2022-11-28T18:26:06.204950+00:00 app[web.1]: id: 109,
+2022-11-28T18:26:06.204951+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.204951+00:00 app[web.1]: userId: 34,
+2022-11-28T18:26:06.204951+00:00 app[web.1]: rating: 2,
+2022-11-28T18:26:06.204954+00:00 app[web.1]: title: 'Review after using Meta Quest a couple of months',
+2022-11-28T18:26:06.204954+00:00 app[web.1]: description: "It's heavy, not comfortable with glasses, dizzy, not enough contents. The contents are selling but not satisfied when purchased. I didn't buy this for gaming.",
+2022-11-28T18:26:06.204955+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.204955+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.204955+00:00 app[web.1]: },
+2022-11-28T18:26:06.204956+00:00 app[web.1]: {
+2022-11-28T18:26:06.204956+00:00 app[web.1]: id: 108,
+2022-11-28T18:26:06.204956+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.204956+00:00 app[web.1]: userId: 28,
+2022-11-28T18:26:06.204957+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.204957+00:00 app[web.1]: title: 'Overly Surprised',
+2022-11-28T18:26:06.204958+00:00 app[web.1]: description: 'I owned the first Oculus (SDK) and years later got a Valve Index. I purchased the Quest for my kid and set it up for him. I am really surprised on the hardware, the tracking, the comfort, the roomscale drawing/layout, the battery, and over all product.',
+2022-11-28T18:26:06.204958+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.204959+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.204968+00:00 app[web.1]: },
+2022-11-28T18:26:06.204968+00:00 app[web.1]: {
+2022-11-28T18:26:06.204968+00:00 app[web.1]: id: 107,
+2022-11-28T18:26:06.204969+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.204969+00:00 app[web.1]: userId: 26,
+2022-11-28T18:26:06.204969+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.204969+00:00 app[web.1]: title: 'Hardware is fine',
+2022-11-28T18:26:06.204970+00:00 app[web.1]: description: 'I have a Rift S and just bought the Quest 2. I love the cordless thing but some changes to the software side would be nice. With the Rift S I can roam around in my VR home environment but with the Quest 2 I can only stand in one place.',
+2022-11-28T18:26:06.204970+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.204971+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:26:06.204971+00:00 app[web.1]: }
+2022-11-28T18:26:06.204971+00:00 app[web.1]: ]
+2022-11-28T18:26:06.205280+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 34;
+2022-11-28T18:26:06.205987+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 28;
+2022-11-28T18:26:06.206666+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 26;
+2022-11-28T18:26:06.207164+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:26:06.207164+00:00 app[web.1]: {
+2022-11-28T18:26:06.207164+00:00 app[web.1]: id: 109,
+2022-11-28T18:26:06.207165+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.207165+00:00 app[web.1]: userId: 34,
+2022-11-28T18:26:06.207165+00:00 app[web.1]: rating: 2,
+2022-11-28T18:26:06.207165+00:00 app[web.1]: title: 'Review after using Meta Quest a couple of months',
+2022-11-28T18:26:06.207165+00:00 app[web.1]: description: "It's heavy, not comfortable with glasses, dizzy, not enough contents. The contents are selling but not satisfied when purchased. I didn't buy this for gaming.",
+2022-11-28T18:26:06.207166+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207166+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207166+00:00 app[web.1]: User: {
+2022-11-28T18:26:06.207166+00:00 app[web.1]: id: 34,
+2022-11-28T18:26:06.207167+00:00 app[web.1]: firstName: 'Kevin',
+2022-11-28T18:26:06.207167+00:00 app[web.1]: lastName: 'Bartolome',
+2022-11-28T18:26:06.207167+00:00 app[web.1]: username: 'kbartolome'
+2022-11-28T18:26:06.207167+00:00 app[web.1]: }
+2022-11-28T18:26:06.207167+00:00 app[web.1]: },
+2022-11-28T18:26:06.207167+00:00 app[web.1]: {
+2022-11-28T18:26:06.207168+00:00 app[web.1]: id: 108,
+2022-11-28T18:26:06.207168+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.207168+00:00 app[web.1]: userId: 28,
+2022-11-28T18:26:06.207168+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.207168+00:00 app[web.1]: title: 'Overly Surprised',
+2022-11-28T18:26:06.207168+00:00 app[web.1]: description: 'I owned the first Oculus (SDK) and years later got a Valve Index. I purchased the Quest for my kid and set it up for him. I am really surprised on the hardware, the tracking, the comfort, the roomscale drawing/layout, the battery, and over all product.',
+2022-11-28T18:26:06.207168+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207169+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207169+00:00 app[web.1]: User: { id: 28, firstName: 'John', lastName: 'Lee', username: 'jlee' }
+2022-11-28T18:26:06.207169+00:00 app[web.1]: },
+2022-11-28T18:26:06.207169+00:00 app[web.1]: {
+2022-11-28T18:26:06.207169+00:00 app[web.1]: id: 107,
+2022-11-28T18:26:06.207169+00:00 app[web.1]: productId: 40,
+2022-11-28T18:26:06.207170+00:00 app[web.1]: userId: 26,
+2022-11-28T18:26:06.207170+00:00 app[web.1]: rating: 5,
+2022-11-28T18:26:06.207170+00:00 app[web.1]: title: 'Hardware is fine',
+2022-11-28T18:26:06.207170+00:00 app[web.1]: description: 'I have a Rift S and just bought the Quest 2. I love the cordless thing but some changes to the software side would be nice. With the Rift S I can roam around in my VR home environment but with the Quest 2 I can only stand in one place.',
+2022-11-28T18:26:06.207170+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207170+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:26:06.207171+00:00 app[web.1]: User: {
+2022-11-28T18:26:06.207171+00:00 app[web.1]: id: 26,
+2022-11-28T18:26:06.207171+00:00 app[web.1]: firstName: 'Daniel',
+2022-11-28T18:26:06.207171+00:00 app[web.1]: lastName: 'Flores',
+2022-11-28T18:26:06.207171+00:00 app[web.1]: username: 'dflores'
+2022-11-28T18:26:06.207171+00:00 app[web.1]: }
+2022-11-28T18:26:06.207172+00:00 app[web.1]: }
+2022-11-28T18:26:06.207172+00:00 app[web.1]: ]
+2022-11-28T18:26:06.207523+00:00 app[web.1]: [0mGET /api/products/40/reviews [36m304[0m 6.415 ms - -[0m
+2022-11-28T18:26:06.210095+00:00 heroku[router]: at=info method=GET path="/api/products/40/reviews" host=kl-market.herokuapp.com request_id=0dd54787-1660-43d5-869c-c487024688cd fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=304 bytes=195 protocol=https
+2022-11-28T18:26:10.540886+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:26:10.542145+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:26:10.543047+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 2.923 ms - -[0m
+2022-11-28T18:26:10.545682+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=dab40808-9a87-48e0-9fb2-2b12dd566947 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:43.719099+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:43.721649+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:31:43.723028+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 19.818 ms - -[0m
+2022-11-28T18:31:43.725457+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=b8620257-467a-4bc8-8611-74a5a6601930 fwd="71.212.148.2" dyno=web.1 connect=0ms service=20ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:44.840950+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:44.844852+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:31:44.845582+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 5.448 ms - -[0m
+2022-11-28T18:31:44.848010+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=fee0d0ed-fa5d-4316-b38a-4f188f31c137 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:45.647315+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:45.648637+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '7';
+2022-11-28T18:31:45.649497+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '7';
+2022-11-28T18:31:45.650764+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 44 LIMIT 1;
+2022-11-28T18:31:45.651918+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 45 LIMIT 1;
+2022-11-28T18:31:45.652708+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 46 LIMIT 1;
+2022-11-28T18:31:45.653533+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 47 LIMIT 1;
+2022-11-28T18:31:45.654386+00:00 app[web.1]: [0mGET /api/departments/7/products [36m304[0m 7.855 ms - -[0m
+2022-11-28T18:31:45.656808+00:00 heroku[router]: at=info method=GET path="/api/departments/7/products" host=kl-market.herokuapp.com request_id=0ef39616-51f9-4d88-a417-dc1702c5ea62 fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:46.580663+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:46.581842+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '44';
+2022-11-28T18:31:46.582708+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '44';
+2022-11-28T18:31:46.583834+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '44';
+2022-11-28T18:31:46.584696+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 7;
+2022-11-28T18:31:46.585404+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '44';
+2022-11-28T18:31:46.586243+00:00 app[web.1]: [0mGET /api/products/44 [36m304[0m 6.318 ms - -[0m
+2022-11-28T18:31:46.588731+00:00 heroku[router]: at=info method=GET path="/api/products/44" host=kl-market.herokuapp.com request_id=42cf06db-ce18-42a7-8c60-9022d51d3a69 fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:46.662471+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:46.664033+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '44';
+2022-11-28T18:31:46.664948+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '44' ORDER BY "Review"."id" DESC;
+2022-11-28T18:31:46.666044+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:31:46.666045+00:00 app[web.1]: {
+2022-11-28T18:31:46.666045+00:00 app[web.1]: id: 121,
+2022-11-28T18:31:46.666045+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.666045+00:00 app[web.1]: userId: 46,
+2022-11-28T18:31:46.666046+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.666054+00:00 app[web.1]: title: 'Muscle bound',
+2022-11-28T18:31:46.666055+00:00 app[web.1]: description: 'Needed heavier workout weights & these were exactly what I wanted & needed.',
+2022-11-28T18:31:46.666056+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.666056+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.666056+00:00 app[web.1]: },
+2022-11-28T18:31:46.666056+00:00 app[web.1]: {
+2022-11-28T18:31:46.666056+00:00 app[web.1]: id: 120,
+2022-11-28T18:31:46.666057+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.666057+00:00 app[web.1]: userId: 15,
+2022-11-28T18:31:46.666057+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.666057+00:00 app[web.1]: title: 'Just Right',
+2022-11-28T18:31:46.666058+00:00 app[web.1]: description: 'We have tried dumbbells of varying sizes over time. These are just right for everyday use. There is no pain and we still get a light workout.',
+2022-11-28T18:31:46.666058+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.666058+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.666059+00:00 app[web.1]: },
+2022-11-28T18:31:46.666059+00:00 app[web.1]: {
+2022-11-28T18:31:46.666059+00:00 app[web.1]: id: 119,
+2022-11-28T18:31:46.666059+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.666059+00:00 app[web.1]: userId: 11,
+2022-11-28T18:31:46.666059+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.666060+00:00 app[web.1]: title: 'Comfortable Weights',
+2022-11-28T18:31:46.666060+00:00 app[web.1]: description: 'Bought these to complete my home gym weights set. These are comfortable to hold and I love all the fun colors. Definitely reccomend them.',
+2022-11-28T18:31:46.666060+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.666061+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.666061+00:00 app[web.1]: }
+2022-11-28T18:31:46.666061+00:00 app[web.1]: ]
+2022-11-28T18:31:46.666410+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 46;
+2022-11-28T18:31:46.667164+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 15;
+2022-11-28T18:31:46.667916+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 11;
+2022-11-28T18:31:46.668572+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:31:46.668573+00:00 app[web.1]: {
+2022-11-28T18:31:46.668573+00:00 app[web.1]: id: 121,
+2022-11-28T18:31:46.668573+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.668574+00:00 app[web.1]: userId: 46,
+2022-11-28T18:31:46.668574+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.668577+00:00 app[web.1]: title: 'Muscle bound',
+2022-11-28T18:31:46.668578+00:00 app[web.1]: description: 'Needed heavier workout weights & these were exactly what I wanted & needed.',
+2022-11-28T18:31:46.668579+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668579+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668579+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.668580+00:00 app[web.1]: id: 46,
+2022-11-28T18:31:46.668580+00:00 app[web.1]: firstName: 'Brennon',
+2022-11-28T18:31:46.668580+00:00 app[web.1]: lastName: 'Morris',
+2022-11-28T18:31:46.668581+00:00 app[web.1]: username: 'BrennonMorris'
+2022-11-28T18:31:46.668581+00:00 app[web.1]: }
+2022-11-28T18:31:46.668581+00:00 app[web.1]: },
+2022-11-28T18:31:46.668581+00:00 app[web.1]: {
+2022-11-28T18:31:46.668582+00:00 app[web.1]: id: 120,
+2022-11-28T18:31:46.668582+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.668582+00:00 app[web.1]: userId: 15,
+2022-11-28T18:31:46.668582+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.668583+00:00 app[web.1]: title: 'Just Right',
+2022-11-28T18:31:46.668583+00:00 app[web.1]: description: 'We have tried dumbbells of varying sizes over time. These are just right for everyday use. There is no pain and we still get a light workout.',
+2022-11-28T18:31:46.668583+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668584+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668584+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.668584+00:00 app[web.1]: id: 15,
+2022-11-28T18:31:46.668585+00:00 app[web.1]: firstName: 'Andrew',
+2022-11-28T18:31:46.668585+00:00 app[web.1]: lastName: 'Fava',
+2022-11-28T18:31:46.668585+00:00 app[web.1]: username: 'afava'
+2022-11-28T18:31:46.668585+00:00 app[web.1]: }
+2022-11-28T18:31:46.668585+00:00 app[web.1]: },
+2022-11-28T18:31:46.668585+00:00 app[web.1]: {
+2022-11-28T18:31:46.668586+00:00 app[web.1]: id: 119,
+2022-11-28T18:31:46.668586+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.668586+00:00 app[web.1]: userId: 11,
+2022-11-28T18:31:46.668586+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.668586+00:00 app[web.1]: title: 'Comfortable Weights',
+2022-11-28T18:31:46.668587+00:00 app[web.1]: description: 'Bought these to complete my home gym weights set. These are comfortable to hold and I love all the fun colors. Definitely reccomend them.',
+2022-11-28T18:31:46.668587+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668587+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.668588+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.668588+00:00 app[web.1]: id: 11,
+2022-11-28T18:31:46.668588+00:00 app[web.1]: firstName: 'Braxton',
+2022-11-28T18:31:46.668588+00:00 app[web.1]: lastName: 'Kappes',
+2022-11-28T18:31:46.668589+00:00 app[web.1]: username: 'bkappes'
+2022-11-28T18:31:46.668589+00:00 app[web.1]: }
+2022-11-28T18:31:46.668589+00:00 app[web.1]: }
+2022-11-28T18:31:46.668590+00:00 app[web.1]: ]
+2022-11-28T18:31:46.669062+00:00 app[web.1]: [0mGET /api/products/44/reviews [36m304[0m 8.473 ms - -[0m
+2022-11-28T18:31:46.671445+00:00 heroku[router]: at=info method=GET path="/api/products/44/reviews" host=kl-market.herokuapp.com request_id=50b5d6eb-d79a-459e-aa16-d93801d4aea7 fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:46.745710+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:46.746755+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '44';
+2022-11-28T18:31:46.747525+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '44' ORDER BY "Review"."id" DESC;
+2022-11-28T18:31:46.748251+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:31:46.748252+00:00 app[web.1]: {
+2022-11-28T18:31:46.748252+00:00 app[web.1]: id: 121,
+2022-11-28T18:31:46.748252+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.748252+00:00 app[web.1]: userId: 46,
+2022-11-28T18:31:46.748253+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.748253+00:00 app[web.1]: title: 'Muscle bound',
+2022-11-28T18:31:46.748266+00:00 app[web.1]: description: 'Needed heavier workout weights & these were exactly what I wanted & needed.',
+2022-11-28T18:31:46.748267+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.748267+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.748267+00:00 app[web.1]: },
+2022-11-28T18:31:46.748268+00:00 app[web.1]: {
+2022-11-28T18:31:46.748268+00:00 app[web.1]: id: 120,
+2022-11-28T18:31:46.748268+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.748268+00:00 app[web.1]: userId: 15,
+2022-11-28T18:31:46.748268+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.748269+00:00 app[web.1]: title: 'Just Right',
+2022-11-28T18:31:46.748270+00:00 app[web.1]: description: 'We have tried dumbbells of varying sizes over time. These are just right for everyday use. There is no pain and we still get a light workout.',
+2022-11-28T18:31:46.748270+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.748270+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.748270+00:00 app[web.1]: },
+2022-11-28T18:31:46.748270+00:00 app[web.1]: {
+2022-11-28T18:31:46.748271+00:00 app[web.1]: id: 119,
+2022-11-28T18:31:46.748271+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.748271+00:00 app[web.1]: userId: 11,
+2022-11-28T18:31:46.748271+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.748271+00:00 app[web.1]: title: 'Comfortable Weights',
+2022-11-28T18:31:46.748272+00:00 app[web.1]: description: 'Bought these to complete my home gym weights set. These are comfortable to hold and I love all the fun colors. Definitely reccomend them.',
+2022-11-28T18:31:46.748272+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.748272+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z
+2022-11-28T18:31:46.748272+00:00 app[web.1]: }
+2022-11-28T18:31:46.748272+00:00 app[web.1]: ]
+2022-11-28T18:31:46.748576+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 46;
+2022-11-28T18:31:46.749662+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 15;
+2022-11-28T18:31:46.750669+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 11;
+2022-11-28T18:31:46.751215+00:00 app[web.1]: findAllProductReviews [
+2022-11-28T18:31:46.751215+00:00 app[web.1]: {
+2022-11-28T18:31:46.751215+00:00 app[web.1]: id: 121,
+2022-11-28T18:31:46.751215+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.751215+00:00 app[web.1]: userId: 46,
+2022-11-28T18:31:46.751216+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.751216+00:00 app[web.1]: title: 'Muscle bound',
+2022-11-28T18:31:46.751216+00:00 app[web.1]: description: 'Needed heavier workout weights & these were exactly what I wanted & needed.',
+2022-11-28T18:31:46.751216+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751216+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751216+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.751217+00:00 app[web.1]: id: 46,
+2022-11-28T18:31:46.751217+00:00 app[web.1]: firstName: 'Brennon',
+2022-11-28T18:31:46.751217+00:00 app[web.1]: lastName: 'Morris',
+2022-11-28T18:31:46.751217+00:00 app[web.1]: username: 'BrennonMorris'
+2022-11-28T18:31:46.751217+00:00 app[web.1]: }
+2022-11-28T18:31:46.751218+00:00 app[web.1]: },
+2022-11-28T18:31:46.751218+00:00 app[web.1]: {
+2022-11-28T18:31:46.751218+00:00 app[web.1]: id: 120,
+2022-11-28T18:31:46.751218+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.751218+00:00 app[web.1]: userId: 15,
+2022-11-28T18:31:46.751219+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.751219+00:00 app[web.1]: title: 'Just Right',
+2022-11-28T18:31:46.751219+00:00 app[web.1]: description: 'We have tried dumbbells of varying sizes over time. These are just right for everyday use. There is no pain and we still get a light workout.',
+2022-11-28T18:31:46.751219+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751220+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751220+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.751220+00:00 app[web.1]: id: 15,
+2022-11-28T18:31:46.751220+00:00 app[web.1]: firstName: 'Andrew',
+2022-11-28T18:31:46.751220+00:00 app[web.1]: lastName: 'Fava',
+2022-11-28T18:31:46.751220+00:00 app[web.1]: username: 'afava'
+2022-11-28T18:31:46.751220+00:00 app[web.1]: }
+2022-11-28T18:31:46.751221+00:00 app[web.1]: },
+2022-11-28T18:31:46.751221+00:00 app[web.1]: {
+2022-11-28T18:31:46.751221+00:00 app[web.1]: id: 119,
+2022-11-28T18:31:46.751221+00:00 app[web.1]: productId: 44,
+2022-11-28T18:31:46.751221+00:00 app[web.1]: userId: 11,
+2022-11-28T18:31:46.751221+00:00 app[web.1]: rating: 5,
+2022-11-28T18:31:46.751221+00:00 app[web.1]: title: 'Comfortable Weights',
+2022-11-28T18:31:46.751222+00:00 app[web.1]: description: 'Bought these to complete my home gym weights set. These are comfortable to hold and I love all the fun colors. Definitely reccomend them.',
+2022-11-28T18:31:46.751222+00:00 app[web.1]: createdAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751222+00:00 app[web.1]: updatedAt: 2022-11-28T16:01:12.584Z,
+2022-11-28T18:31:46.751222+00:00 app[web.1]: User: {
+2022-11-28T18:31:46.751223+00:00 app[web.1]: id: 11,
+2022-11-28T18:31:46.751223+00:00 app[web.1]: firstName: 'Braxton',
+2022-11-28T18:31:46.751223+00:00 app[web.1]: lastName: 'Kappes',
+2022-11-28T18:31:46.751223+00:00 app[web.1]: username: 'bkappes'
+2022-11-28T18:31:46.751223+00:00 app[web.1]: }
+2022-11-28T18:31:46.751224+00:00 app[web.1]: }
+2022-11-28T18:31:46.751224+00:00 app[web.1]: ]
+2022-11-28T18:31:46.751576+00:00 app[web.1]: [0mGET /api/products/44/reviews [36m304[0m 6.765 ms - -[0m
+2022-11-28T18:31:46.754145+00:00 heroku[router]: at=info method=GET path="/api/products/44/reviews" host=kl-market.herokuapp.com request_id=44d87c46-59eb-4c80-aa73-e3ce34d40259 fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=304 bytes=195 protocol=https
+2022-11-28T18:31:47.584263+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:47.585541+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = 44;
+2022-11-28T18:31:47.587062+00:00 app[web.1]: Executing (default): INSERT INTO "Carts" ("userId","productId","createdAt","updatedAt","ProductId","UserId") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "userId","productId","createdAt","updatedAt","ProductId","UserId";
+2022-11-28T18:31:47.587908+00:00 app[web.1]: [0mPOST /api/cart [33m404[0m 4.816 ms - 1327[0m
+2022-11-28T18:31:47.590383+00:00 heroku[router]: at=info method=POST path="/api/cart" host=kl-market.herokuapp.com request_id=59ed1906-c684-4219-bdfc-6445f8f7d48d fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=404 bytes=1588 protocol=https
+2022-11-28T18:31:48.664779+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:31:48.665911+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:31:48.666869+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 2.828 ms - -[0m
+2022-11-28T18:31:48.669358+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=74612203-0640-46fe-aa4e-80d96cc0ba7d fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=195 protocol=https
+2022-11-28T18:38:33.685158+00:00 app[web.1]: [0mGET /account/orders [36m304[0m 0.603 ms - -[0m
+2022-11-28T18:38:33.687120+00:00 heroku[router]: at=info method=GET path="/account/orders" host=kl-market.herokuapp.com request_id=14dd0048-96e6-404c-8556-127a62c8db43 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=304 bytes=350 protocol=https
+2022-11-28T18:38:33.821390+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js [36m304[0m 0.346 ms - -[0m
+2022-11-28T18:38:33.823318+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js" host=kl-market.herokuapp.com request_id=6161f99a-f966-43ef-9eb0-b25842eb7a6a fwd="71.212.148.2" dyno=web.1 connect=0ms service=1ms status=304 bytes=283 protocol=https
+2022-11-28T18:38:33.898913+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 0.362 ms - -[0m
+2022-11-28T18:38:33.900788+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=f88c1d3f-41f3-4956-bc08-4b66c081fee9 fwd="71.212.148.2" dyno=web.1 connect=0ms service=1ms status=304 bytes=281 protocol=https
+2022-11-28T18:38:34.023871+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:34.026008+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:34.026952+00:00 app[web.1]: [0mGET /api/session [36m304[0m 18.384 ms - -[0m
+2022-11-28T18:38:34.028840+00:00 heroku[router]: at=info method=GET path="/api/session" host=kl-market.herokuapp.com request_id=9cbd4110-7b93-4c64-8e5f-99eea75f8835 fwd="71.212.148.2" dyno=web.1 connect=0ms service=19ms status=304 bytes=194 protocol=https
+2022-11-28T18:38:34.146940+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:34.148176+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T18:38:34.151280+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T18:38:34.152523+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 6.446 ms - -[0m
+2022-11-28T18:38:34.154343+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=d29dd6c6-d7af-467d-b98d-261291e05264 fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=304 bytes=195 protocol=https
+2022-11-28T18:38:34.157233+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=9a968a9a-a1fa-4a31-9c72-2c1df0dcc29e fwd="71.212.148.2" dyno=web.1 connect=0ms service=1ms status=304 bytes=364 protocol=https
+2022-11-28T18:38:34.186531+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 0.442 ms - -[0m
+2022-11-28T18:38:37.613368+00:00 app[web.1]: [0mGET /account/orders [36m304[0m 0.568 ms - -[0m
+2022-11-28T18:38:37.619902+00:00 heroku[router]: at=info method=GET path="/account/orders" host=kl-market.herokuapp.com request_id=6bea3eca-cf2f-43f1-ae41-19f97a2d8ca7 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=304 bytes=350 protocol=https
+2022-11-28T18:38:37.724238+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=b0c4f480-d88d-4de9-bf1a-170a0c2fe170 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=304 bytes=281 protocol=https
+2022-11-28T18:38:37.725400+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js [36m304[0m 0.500 ms - -[0m
+2022-11-28T18:38:37.726125+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 0.380 ms - -[0m
+2022-11-28T18:38:37.727201+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js" host=kl-market.herokuapp.com request_id=3def296a-07b9-43e0-be08-f847744e38c9 fwd="71.212.148.2" dyno=web.1 connect=0ms service=1ms status=304 bytes=283 protocol=https
+2022-11-28T18:38:37.814026+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=0910d3ff-402b-4baa-8447-a5b981c0654a fwd="71.212.148.2" dyno=web.1 connect=0ms service=1ms status=304 bytes=364 protocol=https
+2022-11-28T18:38:37.824247+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:37.825620+00:00 heroku[router]: at=info method=GET path="/api/session" host=kl-market.herokuapp.com request_id=2a811ee1-992c-4792-817c-339d5baf2cb6 fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=304 bytes=194 protocol=https
+2022-11-28T18:38:37.826910+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:37.828117+00:00 app[web.1]: [0mGET /api/session [36m304[0m 4.596 ms - -[0m
+2022-11-28T18:38:37.843365+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 0.434 ms - -[0m
+2022-11-28T18:38:37.910081+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:38:37.910886+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=2028a522-a693-460e-b0ee-ef0dee1c4e58 fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=304 bytes=195 protocol=https
+2022-11-28T18:38:37.911411+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T18:38:37.912312+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T18:38:37.913496+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 4.205 ms - -[0m
+2022-11-28T18:44:35.937525+00:00 app[api]: Detach DATABASE (@ref:postgresql-horizontal-65101) by user kevinlongboy@gmail.com
+2022-11-28T18:44:35.937525+00:00 app[api]: Release v21 created by user kevinlongboy@gmail.com
+2022-11-28T18:44:36.195205+00:00 heroku[web.1]: Restarting
+2022-11-28T18:44:36.225416+00:00 heroku[web.1]: State changed from up to starting
+2022-11-28T18:44:36.951173+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2022-11-28T18:44:37.152859+00:00 heroku[web.1]: Process exited with status 143
+2022-11-28T18:44:44.547205+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-11-28T18:44:46.268872+00:00 app[web.1]: 
+2022-11-28T18:44:46.268898+00:00 app[web.1]: > market@1.0.0 start
+2022-11-28T18:44:46.268899+00:00 app[web.1]: > npm start --prefix backend
+2022-11-28T18:44:46.268899+00:00 app[web.1]: 
+2022-11-28T18:44:46.580673+00:00 app[web.1]: 
+2022-11-28T18:44:46.580691+00:00 app[web.1]: > backend@1.0.0 start
+2022-11-28T18:44:46.580692+00:00 app[web.1]: > per-env
+2022-11-28T18:44:46.580692+00:00 app[web.1]: 
+2022-11-28T18:44:46.958023+00:00 app[web.1]: 
+2022-11-28T18:44:46.958045+00:00 app[web.1]: > backend@1.0.0 start:production
+2022-11-28T18:44:46.958046+00:00 app[web.1]: > node ./bin/www
+2022-11-28T18:44:46.958046+00:00 app[web.1]: 
+2022-11-28T18:44:47.260455+00:00 app[web.1]: node:internal/validators:163
+2022-11-28T18:44:47.260468+00:00 app[web.1]: throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+2022-11-28T18:44:47.260468+00:00 app[web.1]: ^
+2022-11-28T18:44:47.260469+00:00 app[web.1]: 
+2022-11-28T18:44:47.260469+00:00 app[web.1]: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+2022-11-28T18:44:47.260469+00:00 app[web.1]: at new NodeError (node:internal/errors:393:5)
+2022-11-28T18:44:47.260470+00:00 app[web.1]: at validateString (node:internal/validators:163:11)
+2022-11-28T18:44:47.260470+00:00 app[web.1]: at Url.parse (node:url:185:3)
+2022-11-28T18:44:47.260470+00:00 app[web.1]: at Object.urlParse [as parse] (node:url:156:13)
+2022-11-28T18:44:47.260470+00:00 app[web.1]: at new Sequelize (/app/backend/node_modules/sequelize/lib/sequelize.js:57:28)
+2022-11-28T18:44:47.260471+00:00 app[web.1]: at Object.<anonymous> (/app/backend/db/models/index.js:14:15)
+2022-11-28T18:44:47.260471+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1159:14)
+2022-11-28T18:44:47.260472+00:00 app[web.1]: at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+2022-11-28T18:44:47.260472+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:1037:32)
+2022-11-28T18:44:47.260472+00:00 app[web.1]: at Module._load (node:internal/modules/cjs/loader:878:12) {
+2022-11-28T18:44:47.260473+00:00 app[web.1]: code: 'ERR_INVALID_ARG_TYPE'
+2022-11-28T18:44:47.260473+00:00 app[web.1]: }
+2022-11-28T18:44:47.260476+00:00 app[web.1]: 
+2022-11-28T18:44:47.260476+00:00 app[web.1]: Node.js v18.12.1
+2022-11-28T18:44:47.443387+00:00 heroku[web.1]: Process exited with status 1
+2022-11-28T18:44:47.529717+00:00 heroku[web.1]: State changed from starting to crashed
+2022-11-28T18:44:47.535323+00:00 heroku[web.1]: State changed from crashed to starting
+2022-11-28T18:44:56.707152+00:00 app[api]: Running release v22 commands by user kevinlongboy@gmail.com
+2022-11-28T18:44:56.707152+00:00 app[api]: Attach DATABASE (@ref:postgresql-objective-37974) by user kevinlongboy@gmail.com
+2022-11-28T18:44:56.721090+00:00 app[api]: @ref:postgresql-objective-37974 completed provisioning, setting DATABASE_URL. by user kevinlongboy@gmail.com
+2022-11-28T18:44:56.721090+00:00 app[api]: Release v23 created by user kevinlongboy@gmail.com
+2022-11-28T18:44:57.942802+00:00 heroku[web.1]: Restarting
+2022-11-28T18:45:02.470712+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-11-28T18:45:05.001011+00:00 app[web.1]: 
+2022-11-28T18:45:05.001043+00:00 app[web.1]: > market@1.0.0 start
+2022-11-28T18:45:05.001043+00:00 app[web.1]: > npm start --prefix backend
+2022-11-28T18:45:05.001044+00:00 app[web.1]: 
+2022-11-28T18:45:05.566769+00:00 app[web.1]: 
+2022-11-28T18:45:05.566802+00:00 app[web.1]: > backend@1.0.0 start
+2022-11-28T18:45:05.566803+00:00 app[web.1]: > per-env
+2022-11-28T18:45:05.566803+00:00 app[web.1]: 
+2022-11-28T18:45:06.173911+00:00 app[web.1]: 
+2022-11-28T18:45:06.173923+00:00 app[web.1]: > backend@1.0.0 start:production
+2022-11-28T18:45:06.173924+00:00 app[web.1]: > node ./bin/www
+2022-11-28T18:45:06.173924+00:00 app[web.1]: 
+2022-11-28T18:45:06.683721+00:00 app[web.1]: node:internal/validators:163
+2022-11-28T18:45:06.683740+00:00 app[web.1]: throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+2022-11-28T18:45:06.683741+00:00 app[web.1]: ^
+2022-11-28T18:45:06.683742+00:00 app[web.1]: 
+2022-11-28T18:45:06.683742+00:00 app[web.1]: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+2022-11-28T18:45:06.683743+00:00 app[web.1]: at new NodeError (node:internal/errors:393:5)
+2022-11-28T18:45:06.683743+00:00 app[web.1]: at validateString (node:internal/validators:163:11)
+2022-11-28T18:45:06.683745+00:00 app[web.1]: at Url.parse (node:url:185:3)
+2022-11-28T18:45:06.683745+00:00 app[web.1]: at Object.urlParse [as parse] (node:url:156:13)
+2022-11-28T18:45:06.683745+00:00 app[web.1]: at new Sequelize (/app/backend/node_modules/sequelize/lib/sequelize.js:57:28)
+2022-11-28T18:45:06.683747+00:00 app[web.1]: at Object.<anonymous> (/app/backend/db/models/index.js:14:15)
+2022-11-28T18:45:06.683747+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1159:14)
+2022-11-28T18:45:06.683747+00:00 app[web.1]: at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+2022-11-28T18:45:06.683748+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:1037:32)
+2022-11-28T18:45:06.683748+00:00 app[web.1]: at Module._load (node:internal/modules/cjs/loader:878:12) {
+2022-11-28T18:45:06.683748+00:00 app[web.1]: code: 'ERR_INVALID_ARG_TYPE'
+2022-11-28T18:45:06.683749+00:00 app[web.1]: }
+2022-11-28T18:45:06.683753+00:00 app[web.1]: 
+2022-11-28T18:45:06.683754+00:00 app[web.1]: Node.js v18.12.1
+2022-11-28T18:45:06.883265+00:00 heroku[web.1]: Process exited with status 1
+2022-11-28T18:45:10.524330+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-11-28T18:45:13.623723+00:00 app[web.1]: 
+2022-11-28T18:45:13.623741+00:00 app[web.1]: > market@1.0.0 start
+2022-11-28T18:45:13.623742+00:00 app[web.1]: > npm start --prefix backend
+2022-11-28T18:45:13.623742+00:00 app[web.1]: 
+2022-11-28T18:45:14.400244+00:00 app[web.1]: 
+2022-11-28T18:45:14.400316+00:00 app[web.1]: > backend@1.0.0 start
+2022-11-28T18:45:14.400317+00:00 app[web.1]: > per-env
+2022-11-28T18:45:14.400317+00:00 app[web.1]: 
+2022-11-28T18:45:15.155551+00:00 app[web.1]: 
+2022-11-28T18:45:15.155580+00:00 app[web.1]: > backend@1.0.0 start:production
+2022-11-28T18:45:15.155581+00:00 app[web.1]: > node ./bin/www
+2022-11-28T18:45:15.155581+00:00 app[web.1]: 
+2022-11-28T18:45:16.155383+00:00 app[web.1]: Executing (default): SELECT 1+1 AS result
+2022-11-28T18:45:16.157593+00:00 app[web.1]: Database connection success! Sequelize is ready to use...
+2022-11-28T18:45:16.163078+00:00 app[web.1]: Listening on port 43138...
+2022-11-28T18:45:16.602681+00:00 heroku[web.1]: State changed from starting to up
+2022-11-28T18:45:39.000000+00:00 app[api]: Build started by user kevinlongboy@gmail.com
+2022-11-28T18:46:43.669163+00:00 app[api]: Deploy 5fe89eaf by user kevinlongboy@gmail.com
+2022-11-28T18:46:43.669163+00:00 app[api]: Release v24 created by user kevinlongboy@gmail.com
+2022-11-28T18:46:43.964150+00:00 heroku[web.1]: Restarting
+2022-11-28T18:46:43.966801+00:00 heroku[web.1]: State changed from up to starting
+2022-11-28T18:46:44.000000+00:00 app[api]: Build succeeded
+2022-11-28T18:46:45.259382+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2022-11-28T18:46:45.501386+00:00 heroku[web.1]: Process exited with status 143
+2022-11-28T18:46:52.735665+00:00 heroku[web.1]: Starting process with command `npm start`
+2022-11-28T18:46:54.602666+00:00 app[web.1]: 
+2022-11-28T18:46:54.602699+00:00 app[web.1]: > market@1.0.0 start
+2022-11-28T18:46:54.602699+00:00 app[web.1]: > npm start --prefix backend
+2022-11-28T18:46:54.602700+00:00 app[web.1]: 
+2022-11-28T18:46:55.010279+00:00 app[web.1]: 
+2022-11-28T18:46:55.010310+00:00 app[web.1]: > backend@1.0.0 start
+2022-11-28T18:46:55.010311+00:00 app[web.1]: > per-env
+2022-11-28T18:46:55.010311+00:00 app[web.1]: 
+2022-11-28T18:46:55.420510+00:00 app[web.1]: 
+2022-11-28T18:46:55.420524+00:00 app[web.1]: > backend@1.0.0 start:production
+2022-11-28T18:46:55.420525+00:00 app[web.1]: > node ./bin/www
+2022-11-28T18:46:55.420525+00:00 app[web.1]: 
+2022-11-28T18:46:56.101125+00:00 app[api]: Starting process with command `npm run sequelize db:migrate` by user kevinlongboy@gmail.com
+2022-11-28T18:46:56.436533+00:00 app[web.1]: Executing (default): SELECT 1+1 AS result
+2022-11-28T18:46:56.452166+00:00 app[web.1]: Database connection success! Sequelize is ready to use...
+2022-11-28T18:46:56.454705+00:00 app[web.1]: Listening on port 53749...
+2022-11-28T18:46:56.829318+00:00 heroku[web.1]: State changed from starting to up
+2022-11-28T18:47:11.307865+00:00 heroku[run.3604]: Awaiting client
+2022-11-28T18:47:11.323423+00:00 heroku[run.3604]: Starting process with command `npm run sequelize db:migrate`
+2022-11-28T18:47:11.324582+00:00 heroku[run.3604]: State changed from starting to up
+2022-11-28T18:47:17.896354+00:00 heroku[run.3604]: Process exited with status 0
+2022-11-28T18:47:17.949494+00:00 heroku[run.3604]: State changed from up to complete
+2022-11-28T18:47:21.412634+00:00 app[api]: Starting process with command `npm run sequelize db:seed:all` by user kevinlongboy@gmail.com
+2022-11-28T18:47:30.647146+00:00 heroku[run.8589]: Awaiting client
+2022-11-28T18:47:30.665606+00:00 heroku[run.8589]: Starting process with command `npm run sequelize db:seed:all`
+2022-11-28T18:47:30.696421+00:00 heroku[run.8589]: State changed from starting to up
+2022-11-28T18:47:41.918654+00:00 heroku[run.8589]: Process exited with status 0
+2022-11-28T18:47:41.969722+00:00 heroku[run.8589]: State changed from up to complete
+2022-11-28T18:47:54.887613+00:00 heroku[router]: at=info method=GET path="/account/orders" host=kl-market.herokuapp.com request_id=92dc54df-97b9-46d6-ad7a-acd64893d470 fwd="71.212.148.2" dyno=web.1 connect=0ms service=18ms status=200 bytes=967 protocol=https
+2022-11-28T18:47:54.888759+00:00 app[web.1]: [0mGET /account/orders [32m200[0m 11.043 ms - 566[0m
+2022-11-28T18:47:55.023603+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=4b2a9921-13a5-4b4c-b147-1222633ae942 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=200 bytes=1890 protocol=https
+2022-11-28T18:47:55.023942+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [32m200[0m 1.647 ms - 1558[0m
+2022-11-28T18:47:55.105039+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js" host=kl-market.herokuapp.com request_id=e618cf02-6466-457e-b7b7-8069d7f2c850 fwd="71.212.148.2" dyno=web.1 connect=1ms service=3ms status=200 bytes=218802 protocol=https
+2022-11-28T18:47:55.105468+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js [32m200[0m 1.003 ms - 218452[0m
+2022-11-28T18:47:56.547645+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:47:56.556176+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:47:56.558807+00:00 heroku[router]: at=info method=GET path="/api/session" host=kl-market.herokuapp.com request_id=9f9bd7eb-7c84-47bc-998b-77b7d787b3dd fwd="71.212.148.2" dyno=web.1 connect=0ms service=135ms status=304 bytes=194 protocol=https
+2022-11-28T18:47:56.558882+00:00 app[web.1]: [0mGET /api/session [36m304[0m 133.824 ms - -[0m
+2022-11-28T18:47:56.649178+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:47:56.651861+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T18:47:56.653903+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T18:47:56.657126+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=44656196-1282-43db-aad0-bbf36bb3df94 fwd="71.212.148.2" dyno=web.1 connect=0ms service=11ms status=304 bytes=195 protocol=https
+2022-11-28T18:47:56.657346+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 9.971 ms - -[0m
+2022-11-28T18:47:56.674950+00:00 app[web.1]: [0mGET /manifest.json [32m200[0m 1.286 ms - 184[0m
+2022-11-28T18:47:56.678969+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=c92d39dc-c8ec-4165-8df4-7869af606494 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=200 bytes=606 protocol=https
+2022-11-28T18:47:57.769659+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:47:57.771517+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:47:57.772845+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 4.324 ms - -[0m
+2022-11-28T18:47:57.772889+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=b73767d4-e6fb-43c1-a9ed-d8474535be7f fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=304 bytes=195 protocol=https
+2022-11-28T18:47:58.819360+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:47:58.821678+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '3';
+2022-11-28T18:47:58.823639+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '3';
+2022-11-28T18:47:58.825532+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 13 LIMIT 1;
+2022-11-28T18:47:58.827322+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 14 LIMIT 1;
+2022-11-28T18:47:58.828704+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 15 LIMIT 1;
+2022-11-28T18:47:58.830169+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 16 LIMIT 1;
+2022-11-28T18:47:58.832492+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 17 LIMIT 1;
+2022-11-28T18:47:58.833563+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 18 LIMIT 1;
+2022-11-28T18:47:58.834666+00:00 heroku[router]: at=info method=GET path="/api/departments/3/products" host=kl-market.herokuapp.com request_id=2e1b6d40-e90f-462f-8708-28c0d655ff86 fwd="71.212.148.2" dyno=web.1 connect=0ms service=17ms status=304 bytes=195 protocol=https
+2022-11-28T18:47:58.834777+00:00 app[web.1]: [0mGET /api/departments/3/products [36m304[0m 16.620 ms - -[0m
+2022-11-28T18:48:00.492259+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:00.495073+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T18:48:00.497533+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:00.500464+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T18:48:00.502478+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T18:48:00.505274+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T18:48:00.507010+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T18:48:00.508244+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T18:48:00.509119+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T18:48:00.509929+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=d9fc7818-2660-43ac-ab4c-3dc4202f9a5b fwd="71.212.148.2" dyno=web.1 connect=0ms service=21ms status=200 bytes=935 protocol=https
+2022-11-28T18:48:00.510013+00:00 app[web.1]: [0mGET /api/products/13/reviews [32m200[0m 19.931 ms - 682[0m
+2022-11-28T18:48:00.510999+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 3;
+2022-11-28T18:48:00.512864+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '13';
+2022-11-28T18:48:00.514253+00:00 app[web.1]: [0mGET /api/products/13 [36m304[0m 18.296 ms - -[0m
+2022-11-28T18:48:00.516155+00:00 heroku[router]: at=info method=GET path="/api/products/13" host=kl-market.herokuapp.com request_id=3c3e916b-8da0-4160-ad52-39ecaab36db3 fwd="71.212.148.2" dyno=web.1 connect=0ms service=25ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:00.590732+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:00.592356+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T18:48:00.593527+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T18:48:00.595241+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T18:48:00.596346+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T18:48:00.597418+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=db398503-21c2-4cfc-9d45-21c8b71bb4ca fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:00.597444+00:00 app[web.1]: [0mGET /api/products/13/reviews [36m304[0m 7.919 ms - -[0m
+2022-11-28T18:48:02.363629+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:02.371107+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = 13;
+2022-11-28T18:48:02.372169+00:00 app[web.1]: reach
+2022-11-28T18:48:02.389154+00:00 app[web.1]: Executing (default): INSERT INTO "Carts" ("userId","productId","createdAt","updatedAt","ProductId","UserId") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "userId","productId","createdAt","updatedAt","ProductId","UserId";
+2022-11-28T18:48:02.391567+00:00 heroku[router]: at=info method=POST path="/api/cart" host=kl-market.herokuapp.com request_id=b4516512-667f-44c2-935d-c95142fdc2bb fwd="71.212.148.2" dyno=web.1 connect=0ms service=47ms status=404 bytes=1588 protocol=https
+2022-11-28T18:48:02.391744+00:00 app[web.1]: [0mPOST /api/cart [33m404[0m 44.106 ms - 1327[0m
+2022-11-28T18:48:03.312309+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:03.320284+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:48:03.327825+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=f798f2b5-a4d8-4f6a-afa5-287fc6bef80e fwd="71.212.148.2" dyno=web.1 connect=0ms service=18ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:03.327846+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 16.671 ms - -[0m
+2022-11-28T18:48:04.660282+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:04.663497+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:04.672507+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T18:48:04.673591+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:48:04.674655+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T18:48:04.676196+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 13.556 ms - -[0m
+2022-11-28T18:48:04.676515+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=c59b46c7-7256-4f17-9371-f8ffe94d90ed fwd="71.212.148.2" dyno=web.1 connect=0ms service=23ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:04.677130+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 23.072 ms - -[0m
+2022-11-28T18:48:04.679274+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=7f18c7bc-d10a-48fc-bf66-b3d61be57414 fwd="71.212.148.2" dyno=web.1 connect=0ms service=24ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:05.909812+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:05.912874+00:00 heroku[router]: at=info method=POST path="/api/orders" host=kl-market.herokuapp.com request_id=6249cc50-28d2-4385-ab2a-085a1d7d3c80 fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=400 bytes=335 protocol=https
+2022-11-28T18:48:05.913038+00:00 app[web.1]: [0mPOST /api/orders [33m400[0m 5.046 ms - 75[0m
+2022-11-28T18:48:06.961670+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:06.964078+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:48:06.965810+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 5.291 ms - -[0m
+2022-11-28T18:48:06.966250+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=8fcf93a8-ea32-4617-b2ce-3eff68e18c55 fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:07.934918+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:48:07.936557+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T18:48:07.938034+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=25dcbab7-24c6-43af-98f3-b594bda89e48 fwd="71.212.148.2" dyno=web.1 connect=0ms service=8ms status=304 bytes=195 protocol=https
+2022-11-28T18:48:07.938105+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 7.777 ms - -[0m
+2022-11-28T18:56:06.535668+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:56:06.545300+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '3';
+2022-11-28T18:56:06.547756+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '3';
+2022-11-28T18:56:06.549303+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 13 LIMIT 1;
+2022-11-28T18:56:06.551731+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 14 LIMIT 1;
+2022-11-28T18:56:06.559436+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 15 LIMIT 1;
+2022-11-28T18:56:06.560645+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 16 LIMIT 1;
+2022-11-28T18:56:06.568714+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 17 LIMIT 1;
+2022-11-28T18:56:06.571832+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 18 LIMIT 1;
+2022-11-28T18:56:06.573403+00:00 app[web.1]: [0mGET /api/departments/3/products [36m304[0m 119.900 ms - -[0m
+2022-11-28T18:56:06.574448+00:00 heroku[router]: at=info method=GET path="/api/departments/3/products" host=kl-market.herokuapp.com request_id=7e1d648a-cac4-4341-acc2-46b847edf352 fwd="71.212.148.2" dyno=web.1 connect=0ms service=121ms status=304 bytes=195 protocol=https
+2022-11-28T18:56:11.651361+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:56:11.653094+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:56:11.654243+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15' ORDER BY "Review"."id" DESC;
+2022-11-28T18:56:11.656305+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 13;
+2022-11-28T18:56:11.657769+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 59;
+2022-11-28T18:56:11.658906+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 53;
+2022-11-28T18:56:11.659975+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 25;
+2022-11-28T18:56:11.661172+00:00 app[web.1]: [0mGET /api/products/15/reviews [32m200[0m 10.713 ms - 1350[0m
+2022-11-28T18:56:11.661984+00:00 heroku[router]: at=info method=GET path="/api/products/15/reviews" host=kl-market.herokuapp.com request_id=79f5241e-23ca-4a8d-863a-602888a03153 fwd="71.212.148.2" dyno=web.1 connect=0ms service=12ms status=200 bytes=1604 protocol=https
+2022-11-28T18:56:11.740765+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:56:11.742639+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:56:11.744117+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15';
+2022-11-28T18:56:11.745691+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15';
+2022-11-28T18:56:11.747126+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 3;
+2022-11-28T18:56:11.748192+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '15';
+2022-11-28T18:56:11.749418+00:00 app[web.1]: [0mGET /api/products/15 [32m200[0m 11.490 ms - 1141[0m
+2022-11-28T18:56:11.750373+00:00 heroku[router]: at=info method=GET path="/api/products/15" host=kl-market.herokuapp.com request_id=713bca52-1e3d-4368-9375-a61232841d59 fwd="71.212.148.2" dyno=web.1 connect=0ms service=12ms status=200 bytes=1395 protocol=https
+2022-11-28T18:56:11.801605+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:56:11.803649+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:56:11.804788+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15' ORDER BY "Review"."id" DESC;
+2022-11-28T18:56:11.806132+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 13;
+2022-11-28T18:56:11.807203+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 59;
+2022-11-28T18:56:11.808343+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 53;
+2022-11-28T18:56:11.809557+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 25;
+2022-11-28T18:56:11.810766+00:00 heroku[router]: at=info method=GET path="/api/products/15/reviews" host=kl-market.herokuapp.com request_id=77f2bd56-4be7-4fbd-a941-6a7d2a80787b fwd="71.212.148.2" dyno=web.1 connect=0ms service=12ms status=304 bytes=195 protocol=https
+2022-11-28T18:56:11.810842+00:00 app[web.1]: [0mGET /api/products/15/reviews [36m304[0m 11.353 ms - -[0m
+2022-11-28T18:58:36.583267+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:36.585576+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:58:36.586986+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 28.359 ms - -[0m
+2022-11-28T18:58:36.588092+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=764862a4-cecb-4e1c-a081-fe338dd1fe41 fwd="71.212.148.2" dyno=web.1 connect=0ms service=32ms status=304 bytes=195 protocol=https
+2022-11-28T18:58:38.812744+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:38.815586+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:58:38.816351+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15' ORDER BY "Review"."id" DESC;
+2022-11-28T18:58:38.820049+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 13;
+2022-11-28T18:58:38.821314+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 59;
+2022-11-28T18:58:38.823175+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 53;
+2022-11-28T18:58:38.824482+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 25;
+2022-11-28T18:58:38.825697+00:00 app[web.1]: [0mGET /api/products/15/reviews [36m304[0m 14.259 ms - -[0m
+2022-11-28T18:58:38.826801+00:00 heroku[router]: at=info method=GET path="/api/products/15/reviews" host=kl-market.herokuapp.com request_id=9991cc76-f35a-4362-bfbf-28758083f2da fwd="71.212.148.2" dyno=web.1 connect=0ms service=15ms status=304 bytes=195 protocol=https
+2022-11-28T18:58:38.905646+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:38.907291+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:58:38.908556+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15';
+2022-11-28T18:58:38.915180+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15';
+2022-11-28T18:58:38.919284+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 3;
+2022-11-28T18:58:38.921790+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '15';
+2022-11-28T18:58:38.923285+00:00 app[web.1]: [0mGET /api/products/15 [36m304[0m 18.798 ms - -[0m
+2022-11-28T18:58:38.924461+00:00 heroku[router]: at=info method=GET path="/api/products/15" host=kl-market.herokuapp.com request_id=23588eac-a96c-41df-9097-43164e5573c8 fwd="71.212.148.2" dyno=web.1 connect=0ms service=23ms status=304 bytes=195 protocol=https
+2022-11-28T18:58:38.984448+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:38.986215+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '15';
+2022-11-28T18:58:38.988522+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '15' ORDER BY "Review"."id" DESC;
+2022-11-28T18:58:38.989979+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 13;
+2022-11-28T18:58:38.994007+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 59;
+2022-11-28T18:58:38.995272+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 53;
+2022-11-28T18:58:38.996406+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 25;
+2022-11-28T18:58:38.997974+00:00 app[web.1]: [0mGET /api/products/15/reviews [36m304[0m 14.594 ms - -[0m
+2022-11-28T18:58:38.998948+00:00 heroku[router]: at=info method=GET path="/api/products/15/reviews" host=kl-market.herokuapp.com request_id=274539d7-d5ae-4447-837a-68d84b569665 fwd="71.212.148.2" dyno=web.1 connect=6ms service=19ms status=304 bytes=195 protocol=https
+2022-11-28T18:58:39.782322+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:39.783986+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = 15;
+2022-11-28T18:58:39.784704+00:00 app[web.1]: reach
+2022-11-28T18:58:39.785793+00:00 app[web.1]: Executing (default): INSERT INTO "Carts" ("userId","productId","createdAt","updatedAt","ProductId","UserId") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "userId","productId","createdAt","updatedAt","ProductId","UserId";
+2022-11-28T18:58:39.786958+00:00 app[web.1]: [0mPOST /api/cart [33m404[0m 5.902 ms - 1327[0m
+2022-11-28T18:58:39.787116+00:00 heroku[router]: at=info method=POST path="/api/cart" host=kl-market.herokuapp.com request_id=a022131b-656a-4927-b9f7-4a9ad491356e fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=404 bytes=1588 protocol=https
+2022-11-28T18:58:40.900037+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T18:58:40.901764+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T18:58:40.903380+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 4.600 ms - -[0m
+2022-11-28T18:58:40.903568+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=b0cdc146-a36b-4552-aefe-21524e7c0e29 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=304 bytes=195 protocol=https
+2022-11-28T19:51:56.104726+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:51:56.109110+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T19:51:56.131837+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 173.027 ms - -[0m
+2022-11-28T19:51:56.133272+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=e984f2aa-58e0-42b9-b849-a274a8b61487 fwd="71.212.148.2" dyno=web.1 connect=0ms service=174ms status=304 bytes=195 protocol=https
+2022-11-28T19:51:57.194871+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:51:57.196770+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '3';
+2022-11-28T19:51:57.198131+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '3';
+2022-11-28T19:51:57.199847+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 13 LIMIT 1;
+2022-11-28T19:51:57.201377+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 14 LIMIT 1;
+2022-11-28T19:51:57.202712+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 15 LIMIT 1;
+2022-11-28T19:51:57.204246+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 16 LIMIT 1;
+2022-11-28T19:51:57.205689+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 17 LIMIT 1;
+2022-11-28T19:51:57.206851+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 18 LIMIT 1;
+2022-11-28T19:51:57.209049+00:00 app[web.1]: [0mGET /api/departments/3/products [36m304[0m 14.284 ms - -[0m
+2022-11-28T19:51:57.215532+00:00 heroku[router]: at=info method=GET path="/api/departments/3/products" host=kl-market.herokuapp.com request_id=8ac83cb7-87a9-470a-bc11-acffa05270b0 fwd="71.212.148.2" dyno=web.1 connect=0ms service=21ms status=304 bytes=195 protocol=https
+2022-11-28T19:51:58.410543+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:51:58.412406+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:51:58.413610+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T19:51:58.415937+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T19:51:58.419704+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T19:51:58.421022+00:00 app[web.1]: [0mGET /api/products/13/reviews [36m304[0m 11.435 ms - -[0m
+2022-11-28T19:51:58.425603+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=77e245dc-f964-46ee-a47c-f2ac6d5f06bc fwd="71.212.148.2" dyno=web.1 connect=0ms service=15ms status=304 bytes=195 protocol=https
+2022-11-28T19:51:58.501734+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:51:58.503625+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:51:58.504936+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T19:51:58.506511+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T19:51:58.507830+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 3;
+2022-11-28T19:51:58.508961+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '13';
+2022-11-28T19:51:58.510156+00:00 app[web.1]: [0mGET /api/products/13 [36m304[0m 9.751 ms - -[0m
+2022-11-28T19:51:58.511559+00:00 heroku[router]: at=info method=GET path="/api/products/13" host=kl-market.herokuapp.com request_id=31809efa-5674-4dc0-9994-a97ed190c5f8 fwd="71.212.148.2" dyno=web.1 connect=0ms service=11ms status=304 bytes=195 protocol=https
+2022-11-28T19:51:58.588827+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:51:58.591765+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:51:58.593024+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T19:51:58.594452+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T19:51:58.595618+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T19:51:58.596771+00:00 app[web.1]: [0mGET /api/products/13/reviews [36m304[0m 9.226 ms - -[0m
+2022-11-28T19:51:58.598166+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=9285fb2d-c025-4e39-b948-10d3ac63a023 fwd="71.212.148.2" dyno=web.1 connect=0ms service=11ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:24.397490+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:24.418351+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T19:56:24.421684+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=95d36ab0-2ab6-482f-a5ab-6fee7fc5f395 fwd="71.212.148.2" dyno=web.1 connect=0ms service=116ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:24.422282+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 112.033 ms - -[0m
+2022-11-28T19:56:25.624190+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:25.626151+00:00 app[web.1]: Executing (default): SELECT "id", "name", "createdAt", "updatedAt" FROM "Departments" AS "Department" WHERE "Department"."id" = '3';
+2022-11-28T19:56:25.628473+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."departmentId" = '3';
+2022-11-28T19:56:25.630324+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 13 LIMIT 1;
+2022-11-28T19:56:25.631886+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 14 LIMIT 1;
+2022-11-28T19:56:25.635521+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 15 LIMIT 1;
+2022-11-28T19:56:25.637994+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 16 LIMIT 1;
+2022-11-28T19:56:25.642128+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 17 LIMIT 1;
+2022-11-28T19:56:25.647172+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url", "createdAt", "updatedAt" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = 18 LIMIT 1;
+2022-11-28T19:56:25.649375+00:00 heroku[router]: at=info method=GET path="/api/departments/3/products" host=kl-market.herokuapp.com request_id=2f87e78f-3765-458f-a283-3dc80cd99a98 fwd="71.212.148.2" dyno=web.1 connect=0ms service=28ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:25.649399+00:00 app[web.1]: [0mGET /api/departments/3/products [36m304[0m 25.771 ms - -[0m
+2022-11-28T19:56:27.556436+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:27.561174+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:56:27.562472+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T19:56:27.565052+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T19:56:27.566136+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T19:56:27.567337+00:00 app[web.1]: [0mGET /api/products/13/reviews [36m304[0m 12.035 ms - -[0m
+2022-11-28T19:56:27.567412+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=ccca20cb-20fd-472b-92f9-81a8210bbf26 fwd="71.212.148.2" dyno=web.1 connect=0ms service=14ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:27.649013+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:27.656260+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:56:27.657758+00:00 app[web.1]: Executing (default): SELECT count(*) AS "count" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T19:56:27.659603+00:00 app[web.1]: Executing (default): SELECT sum("rating") AS "sum" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13';
+2022-11-28T19:56:27.662114+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department" WHERE "Department"."id" = 3;
+2022-11-28T19:56:27.663795+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "url" FROM "ProductImages" AS "ProductImage" WHERE "ProductImage"."productId" = '13';
+2022-11-28T19:56:27.664448+00:00 app[web.1]: [0mGET /api/products/13 [36m304[0m 16.480 ms - -[0m
+2022-11-28T19:56:27.664615+00:00 heroku[router]: at=info method=GET path="/api/products/13" host=kl-market.herokuapp.com request_id=ca0ec2e7-82ac-4eba-965f-9466664d629a fwd="71.212.148.2" dyno=web.1 connect=0ms service=17ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:27.720919+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:27.722849+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = '13';
+2022-11-28T19:56:27.724200+00:00 app[web.1]: Executing (default): SELECT "id", "productId", "userId", "rating", "title", "description", "createdAt", "updatedAt" FROM "Reviews" AS "Review" WHERE "Review"."productId" = '13' ORDER BY "Review"."id" DESC;
+2022-11-28T19:56:27.725601+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 16;
+2022-11-28T19:56:27.726927+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username" FROM "Users" AS "User" WHERE "User"."id" = 37;
+2022-11-28T19:56:27.727886+00:00 heroku[router]: at=info method=GET path="/api/products/13/reviews" host=kl-market.herokuapp.com request_id=e54e6073-20b3-41e6-885c-694a33787c91 fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:27.728139+00:00 app[web.1]: [0mGET /api/products/13/reviews [36m304[0m 8.632 ms - -[0m
+2022-11-28T19:56:28.893233+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:28.897562+00:00 app[web.1]: Executing (default): SELECT "id", "departmentId", "name", "price", "description" FROM "Products" AS "Product" WHERE "Product"."id" = 13;
+2022-11-28T19:56:28.898425+00:00 app[web.1]: reach
+2022-11-28T19:56:28.900221+00:00 app[web.1]: Executing (default): INSERT INTO "Carts" ("userId","productId","createdAt","updatedAt","ProductId","UserId") VALUES ($1,$2,$3,$4,$5,$6) RETURNING "userId","productId","createdAt","updatedAt","ProductId","UserId";
+2022-11-28T19:56:28.903236+00:00 app[web.1]: [0mPOST /api/cart [33m404[0m 11.618 ms - 1327[0m
+2022-11-28T19:56:28.903686+00:00 heroku[router]: at=info method=POST path="/api/cart" host=kl-market.herokuapp.com request_id=93c5e9de-e05d-415c-aefe-161a3dc73f66 fwd="71.212.148.2" dyno=web.1 connect=0ms service=15ms status=404 bytes=1588 protocol=https
+2022-11-28T19:56:29.834978+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T19:56:29.836768+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T19:56:29.838250+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=122a8ea7-d1b8-4b25-93d2-3ddbc30f0ca0 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=304 bytes=195 protocol=https
+2022-11-28T19:56:29.838520+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 4.780 ms - -[0m
+2022-11-28T19:56:40.391015+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=f5cca9be-4342-4f36-aaf7-9dc034aaf5d7 fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=304 bytes=281 protocol=https
+2022-11-28T19:56:40.391385+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 4.563 ms - -[0m
+2022-11-28T19:56:40.480569+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js.map [32m200[0m 2.111 ms - 687479[0m
+2022-11-28T19:56:40.480694+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js.map" host=kl-market.herokuapp.com request_id=6a64e49f-3b07-4e6f-adb5-444043da4410 fwd="71.212.148.2" dyno=web.1 connect=0ms service=25ms status=200 bytes=687823 protocol=https
+2022-11-28T19:56:40.613844+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 0.738 ms - -[0m
+2022-11-28T19:56:40.623313+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=347c53fd-7375-4d91-9ae6-454250101d2f fwd="71.212.148.2" dyno=web.1 connect=0ms service=12ms status=304 bytes=364 protocol=https
+2022-11-28T19:56:40.746658+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css.map" host=kl-market.herokuapp.com request_id=9d528b4e-ea16-427a-9382-04a703e96881 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=200 bytes=4096 protocol=https
+2022-11-28T19:56:40.746989+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css.map [32m200[0m 4.549 ms - 3756[0m
+2022-11-28T20:06:45.579459+00:00 heroku[router]: at=info method=GET path="/account/orders" host=kl-market.herokuapp.com request_id=bd3c5fca-3cc7-40f0-b8f2-060e97b3c398 fwd="71.212.148.2" dyno=web.1 connect=0ms service=10ms status=304 bytes=350 protocol=https
+2022-11-28T20:06:45.579758+00:00 app[web.1]: [0mGET /account/orders [36m304[0m 8.111 ms - -[0m
+2022-11-28T20:06:45.714794+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js" host=kl-market.herokuapp.com request_id=eda9ae02-74e6-4198-8590-61ba981c2cf7 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=283 protocol=https
+2022-11-28T20:06:45.715073+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js [36m304[0m 1.828 ms - -[0m
+2022-11-28T20:06:45.810941+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=4a4fb6f5-40ed-470c-a393-57e9baa7c9a6 fwd="71.212.148.2" dyno=web.1 connect=0ms service=11ms status=304 bytes=281 protocol=https
+2022-11-28T20:06:45.811110+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 7.534 ms - -[0m
+2022-11-28T20:06:46.107371+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css.map" host=kl-market.herokuapp.com request_id=0622fed0-5d58-4583-9881-1ce79ad8a308 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=200 bytes=4096 protocol=https
+2022-11-28T20:06:46.107707+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css.map [32m200[0m 0.984 ms - 3756[0m
+2022-11-28T20:06:46.165234+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js.map" host=kl-market.herokuapp.com request_id=e512d238-d310-420b-90d6-3f242004dc6b fwd="71.212.148.2" dyno=web.1 connect=0ms service=15ms status=200 bytes=687823 protocol=https
+2022-11-28T20:06:46.165721+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js.map [32m200[0m 6.191 ms - 687479[0m
+2022-11-28T20:06:46.338921+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:06:46.346197+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:06:46.369594+00:00 heroku[router]: at=info method=GET path="/api/session" host=kl-market.herokuapp.com request_id=2a4ab524-84c8-4182-981d-2f4f98c0331c fwd="71.212.148.2" dyno=web.1 connect=0ms service=179ms status=304 bytes=194 protocol=https
+2022-11-28T20:06:46.370305+00:00 app[web.1]: [0mGET /api/session [36m304[0m 177.588 ms - -[0m
+2022-11-28T20:06:46.449910+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=483f1f04-023a-418c-843d-5edd1b129537 fwd="71.212.148.2" dyno=web.1 connect=0ms service=6ms status=304 bytes=364 protocol=https
+2022-11-28T20:06:46.450471+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 2.521 ms - -[0m
+2022-11-28T20:06:46.463605+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:06:46.467614+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T20:06:46.469573+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T20:06:46.471190+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=19c8fde7-d999-478f-8be9-83527ce21e0e fwd="71.212.148.2" dyno=web.1 connect=0ms service=12ms status=304 bytes=195 protocol=https
+2022-11-28T20:06:46.471498+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 11.033 ms - -[0m
+2022-11-28T20:07:06.440123+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=286f507b-16b0-4311-96f4-b9fd3c1bbf78 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=304 bytes=364 protocol=https
+2022-11-28T20:07:06.440527+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 1.204 ms - -[0m
+2022-11-28T20:07:06.441664+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=58bc5adf-093b-4260-8af2-5f5dd06a8141 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=281 protocol=https
+2022-11-28T20:07:06.441921+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 0.801 ms - -[0m
+2022-11-28T20:07:06.488846+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js.map" host=kl-market.herokuapp.com request_id=7ad1ff16-2fa3-4836-a9fc-604a62fda275 fwd="71.212.148.2" dyno=web.1 connect=0ms service=7ms status=200 bytes=687823 protocol=https
+2022-11-28T20:07:06.489131+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js.map [32m200[0m 0.968 ms - 687479[0m
+2022-11-28T20:07:06.536987+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css.map" host=kl-market.herokuapp.com request_id=49d31b43-14a3-473e-9b6f-147b1817a41a fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=200 bytes=4096 protocol=https
+2022-11-28T20:07:06.537315+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css.map [32m200[0m 1.455 ms - 3756[0m
+2022-11-28T20:07:09.979908+00:00 heroku[router]: at=info method=GET path="/account/orders" host=kl-market.herokuapp.com request_id=ee8c82c0-de5c-41fb-98ef-d4d2d37eeb81 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=304 bytes=350 protocol=https
+2022-11-28T20:07:09.980041+00:00 app[web.1]: [0mGET /account/orders [36m304[0m 0.927 ms - -[0m
+2022-11-28T20:07:10.098009+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js" host=kl-market.herokuapp.com request_id=a5a0529c-de89-465b-9263-d913abea1658 fwd="71.212.148.2" dyno=web.1 connect=0ms service=5ms status=304 bytes=283 protocol=https
+2022-11-28T20:07:10.098122+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js [36m304[0m 1.323 ms - -[0m
+2022-11-28T20:07:10.098388+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css" host=kl-market.herokuapp.com request_id=bfd0f79a-2941-4398-a1fb-f56b16975c0f fwd="71.212.148.2" dyno=web.1 connect=0ms service=4ms status=304 bytes=281 protocol=https
+2022-11-28T20:07:10.098683+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css [36m304[0m 1.170 ms - -[0m
+2022-11-28T20:07:10.228546+00:00 heroku[router]: at=info method=GET path="/static/css/main.65d432b2.css.map" host=kl-market.herokuapp.com request_id=5de62b4c-98c9-4f60-9f4d-fc7b2d3c0db8 fwd="71.212.148.2" dyno=web.1 connect=0ms service=2ms status=200 bytes=4096 protocol=https
+2022-11-28T20:07:10.228808+00:00 app[web.1]: [0mGET /static/css/main.65d432b2.css.map [32m200[0m 0.752 ms - 3756[0m
+2022-11-28T20:07:10.285687+00:00 heroku[router]: at=info method=GET path="/static/js/main.f84235ee.js.map" host=kl-market.herokuapp.com request_id=231113ac-537d-423d-ad52-ccbf9580a0a7 fwd="71.212.148.2" dyno=web.1 connect=0ms service=9ms status=200 bytes=687823 protocol=https
+2022-11-28T20:07:10.285868+00:00 app[web.1]: [0mGET /static/js/main.f84235ee.js.map [32m200[0m 4.042 ms - 687479[0m
+2022-11-28T20:07:10.396467+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=kl-market.herokuapp.com request_id=679f5ea2-065e-40c5-93c0-eba55b955995 fwd="71.212.148.2" dyno=web.1 connect=0ms service=3ms status=304 bytes=364 protocol=https
+2022-11-28T20:07:10.397679+00:00 app[web.1]: [0mGET /manifest.json [36m304[0m 1.348 ms - -[0m
+2022-11-28T20:07:10.451846+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:07:10.461641+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:07:10.483688+00:00 heroku[router]: at=info method=GET path="/api/session" host=kl-market.herokuapp.com request_id=9bab850f-1f00-4e81-b194-3833c2efbd62 fwd="71.212.148.2" dyno=web.1 connect=0ms service=166ms status=304 bytes=194 protocol=https
+2022-11-28T20:07:10.483900+00:00 app[web.1]: [0mGET /api/session [36m304[0m 165.631 ms - -[0m
+2022-11-28T20:07:10.581263+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:07:10.583714+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T20:07:10.587296+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T20:07:10.590001+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=bef7e376-5f6e-4106-9a1e-028ea98e987e fwd="71.212.148.2" dyno=web.1 connect=0ms service=11ms status=304 bytes=195 protocol=https
+2022-11-28T20:07:10.590075+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 9.912 ms - -[0m
+2022-11-28T20:09:26.690709+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:09:26.693810+00:00 app[web.1]: Executing (default): SELECT "userId", "productId", "ProductId", "UserId", "id" FROM "Carts" AS "Cart" WHERE "Cart"."userId" = 1;
+2022-11-28T20:09:26.695472+00:00 heroku[router]: at=info method=GET path="/api/cart" host=kl-market.herokuapp.com request_id=11467b7b-ae05-4594-9459-7d0cc08693f3 fwd="71.212.148.2" dyno=web.1 connect=0ms service=123ms status=304 bytes=195 protocol=https
+2022-11-28T20:09:26.695634+00:00 app[web.1]: [0mGET /api/cart [36m304[0m 121.756 ms - -[0m
+2022-11-28T20:09:35.394602+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:09:35.400145+00:00 app[web.1]: Executing (default): SELECT "id", "userId", "status", "total", "createdAt" FROM "Orders" AS "Order" WHERE "Order"."userId" = 1;
+2022-11-28T20:09:35.402234+00:00 app[web.1]: Executing (default): SELECT "orderId", "productId", "OrderId", "ProductId" FROM "OrderDetails" AS "OrderDetail" WHERE "OrderDetail"."orderId" = 1;
+2022-11-28T20:09:35.407441+00:00 heroku[router]: at=info method=GET path="/api/orders" host=kl-market.herokuapp.com request_id=20f5abc2-6eda-4e20-b3a7-30e62d9819d8 fwd="71.212.148.2" dyno=web.1 connect=0ms service=16ms status=304 bytes=195 protocol=https
+2022-11-28T20:09:35.407517+00:00 app[web.1]: [0mGET /api/orders [36m304[0m 14.163 ms - -[0m
+2022-11-28T20:12:00.679229+00:00 app[web.1]: Executing (default): SELECT "id", "firstName", "lastName", "username", "email", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = 1;
+2022-11-28T20:12:00.682999+00:00 app[web.1]: Executing (default): SELECT "id", "name" FROM "Departments" AS "Department";
+2022-11-28T20:12:00.699597+00:00 app[web.1]: [0mGET /api/departments [36m304[0m 203.966 ms - -[0m
+2022-11-28T20:12:00.727629+00:00 heroku[router]: at=info method=GET path="/api/departments" host=kl-market.herokuapp.com request_id=08d91e21-8ff4-44b2-8f3c-bf0d20edaca9 fwd="71.212.148.2" dyno=web.1 connect=0ms service=207ms status=304 bytes=195 protocol=https

@@ -1,0 +1,50 @@
+#LandingAdvertDepartmentList-component {
+    width: 1100px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.LandingAdvertDepartmentList-title {
+    width: 100%;
+    font-size: 29px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.department-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.department-card {
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7px 8px;
+    padding: 5px 0px;
+
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    /* background-color: red; */
+}
+.department-card:hover {
+    text-decoration: underline;
+    /* background-color: red; */
+}
+
+.department-card-thumbnail {
+    width: 175.91px;
+    padding-bottom: 8px;
+}

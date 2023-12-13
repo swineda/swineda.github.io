@@ -1,0 +1,40 @@
+.GrandTotal-total-at-a-glance{
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.GrandTotal-subtotal-breakdown {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+.GrandTotal-subtotal-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-bottom: 8px;
+    padding: 2.5px 0px;
+}
+#last-GrandTotal-subtotal-item {
+    margin-bottom: 16px;
+}
+.GrandTotal-grandtotal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 16px 0px;
+    border-top: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgb(214, 214, 214);
+
+    font-size: 19px;
+    font-weight: 700;
+}

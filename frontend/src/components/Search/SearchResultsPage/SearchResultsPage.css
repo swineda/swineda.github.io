@@ -1,0 +1,58 @@
+#SearchResultsPage-component {
+    width: 100%;
+    max-width: 1400px;
+    /* height: 150vh; needs to be at least 100vh in case the are search results */
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+/*************** NULL SEARCH RESULTS ***************/
+.null-search-results-container {
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.null-search-results-icon-container {
+    width: 75px;
+    height: 75px;
+
+    margin: 0px 646.5px 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #333;
+}
+.null-search-results-icon {
+    width: 75px;
+    height: 75px;
+
+    object-fit: cover;
+}
+
+.null-search-results-term-container {
+    width: 100%;
+
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.null-search-results-icon-container > p {
+    padding: 0px;
+
+    font-size: 16px;
+}

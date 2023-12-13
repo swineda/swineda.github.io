@@ -1,0 +1,59 @@
+.landing-wrapper-container {
+    display: flex;
+    justify-content: center;
+
+    margin: 0px;
+    padding-bottom: 50px;
+
+    width: 100vw;
+    height: 100%;
+}
+
+#Landing-component {
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    /* background-color: yellow; */
+
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.secondary-panels {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    margin-top: 20px
+}
+
+.secondary-panel-left {
+    grid-column: 1 / 2;
+
+    width: 100%;
+    height: 100%;
+
+    margin-right: 10px;
+}
+
+
+.secondary-panel-right {
+    grid-column: 2 / 3;
+
+    width: 100%;
+    height: 100%;
+
+    margin-left: 10px;
+}
+
+
+.dept-panel {
+    margin-top: 30px;
+}

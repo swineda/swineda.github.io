@@ -1,0 +1,94 @@
+#LandingAdvertPanelSubLeft-component {
+    width: 95%;
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: black;
+    background-image: linear-gradient(-45deg, #62cbd1 50%, transparent 25%, transparent 50%);
+}
+
+.right-promo-text-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #62cbd1;
+}
+
+#save {
+    font-size: 70px;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+}
+#money-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    /* background-color: red; */
+
+}
+#dollar{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 11px;
+    margin: 0px;
+    vertical-align: top;
+}
+#money {
+    font-size: 70px;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+    /* vertical-align: top; */
+
+}
+.promo-text-sub-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    font-size: 80px;
+    font-weight: 700;
+
+}
+#promo-text-sub-sub-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-left: 5px;
+
+}
+
+#promo-text-sub-sub-container > div {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#xbox-image {
+    width: 300px;
+}

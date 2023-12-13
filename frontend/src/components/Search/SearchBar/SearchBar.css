@@ -1,0 +1,83 @@
+.SearchBar-component {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form */
+.SearchBar-form {
+    width: 521.97px;
+    height: 44px;
+    background-color: #f7f7f7;
+
+    border-radius: 8px;
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+/******************** LEFT ********************/
+.SearchBar-form-left {
+    width: 100%;
+    /* background-color: red; */
+}
+/* Input */
+.SearchBar-form-label {
+    /* width: 100%; */
+    /* background-color: aqua; */
+}
+.SearchBar-form-text-input {
+    width: 100%;
+    background-color: #f7f7f7;
+
+    margin: 12px 80px 12px 12px;
+    border: 0px;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+/******************** RIGHT ********************/
+.SearchBar-form-right {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Clear button */
+.search-form-clear-search-button-container {
+    width: 41px;
+    height: 32px;
+
+    background-color: #f7f7f7;
+    border: none;
+    border-right: 1px solid #dcdcdc;
+    padding: 0px 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    color: #666;
+    font-weight: 100;
+
+    cursor: pointer;
+}
+
+/* Submit button */
+#search-form-submit-search-button-container {
+    border: none;
+    margin-right: 6px;
+}
+#search-form-submit-search-button {
+    font-size: 16px;
+}

@@ -1,0 +1,16 @@
+#RedCard-component {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.RedCard-panel-container {
+    width: 100%;
+    max-width: 1400px;
+}

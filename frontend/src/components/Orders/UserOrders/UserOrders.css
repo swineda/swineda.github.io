@@ -1,0 +1,132 @@
+
+#UserOrders-component {
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+
+    margin: 0px;
+    /* padding: 0px 20px; */
+
+    display: flex;
+    flex-direction:column;
+    /* align-items: center; */
+    background-color: #f7f7f7;
+}
+
+
+.UserOrders-directory-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:  100%;
+    font-size: 14px;
+    color: #333;
+    padding: 0px 20px;
+    background-color: #fff;
+}
+.UserOrders-directory-container > * {
+    padding-right: 4px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#UserOrders-Account-redirect-button {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+#UserOrders-Account-redirect-button > i {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.UserOrders-title-container {
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #333;
+    padding: 0px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #888;
+}
+.UserOrders-title {
+    font-size: 23px;
+    font-weight: 700;
+}
+.UserOrders-title-location{
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin: 0px;
+    padding:0px;
+    /* background-color: red; */
+    /* height: 70px; */
+}
+
+.UserOrders-card-container {
+    width: 1047px;
+    background-color: #fff;
+    margin: 16px 0px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.UserOrders-card-title-container {
+    width: 100%;
+    height: 27.14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.UserOrders-card-title-container:first-child {
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+}
+.UserOrders-card-title-container:last-child {
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+}
+#UserOrders-card-title-redirect {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    text-decoration: none;
+}
+#UserOrders-card-title-redirect:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+.UserOrders-card-details-container > p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0px;
+}
+.UserOrders-card-details-container > div {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0px;
+}
+.UserOrders-card-details-container > div > i {
+    font-size: 25px;
+    color: #469a3e;
+    margin: 2px 0px;
+    padding-right: 5px;
+}
+
+
+.UserOrders-card-thumbnail-container {
+    width: 100%;
+    display: inline-block;
+}
+.UserOrders-card-thumbnail {
+    width: 50px;
+}

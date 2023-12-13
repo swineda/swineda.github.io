@@ -1,0 +1,170 @@
+.RedCardPanelApplyNow-component {
+    width: 100%;
+
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.RedCardPanelApplyNow-card {
+    /* height: 550px; */
+    width: 662px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin:  0px 16px;
+    padding: 40px 20px;
+    border-radius: 24px;
+    box-shadow: rgb(0 0 0 / 2%) 0px -1px 6px, rgb(0 0 0 / 4%) 0px 1px 3px, rgb(0 0 0 / 6%) 0px 3px 5px, rgb(0 0 0 / 4%) 0px 4px 6px;;
+}
+
+.RedCardPanelApplyNow-card-header {
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.RedCardPanelApplyNow-card-body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********** LEFT **********/
+#RedCardPanelApplyNow-card-left {
+    background-color: #f7f7f7;
+}
+
+.RedCardPanelApplyNow-card-body-container > h2 {
+    width: 632px;
+
+    margin: 0px 0px 8px;
+
+    font-size: 36px;
+    color: #333;
+    text-indent: 35px;
+}
+.RedCardPanelApplyNow-card-body-container > p {
+    width: 558px;
+
+    margin: 0px 0px 40px;
+
+    font-size: 23px;
+    color: #888;
+    font-weight: 700;
+}
+
+#RedCard-mascot {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+}
+#RedCard-Square-logo {
+    width: 370px;
+    object-fit: contain;
+}
+/* link */
+.RedCard-Square-link-container {
+    padding-bottom: 70px;
+}
+#RedCard-Square-link {
+    font-size: 19px;
+    color: #c00;
+    font-weight: 700;
+    text-decoration: none;
+}
+#RedCard-Square-link:hover {
+    text-decoration: underline;
+}
+#right-chevron-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align:middle;
+
+    margin-left: 10px;
+    border: 2.5px solid #cb0200;
+    border-radius: 100%;
+
+    font-size: 15px;
+    color: #cb0200;
+    text-align: center;
+    line-height: 19px;
+}
+
+/********** RIGHT **********/
+#RedCardPanelApplyNow-card-right {
+    background-image: url("../../../../../images/RedCard/fulfillment-pattern.png");
+}
+#RedCardPanelApplyNow-card-stack-image-container {
+    width: 161px;
+    height: 161px;
+    background-color: #fff;
+
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#RedCardPanelApplyNow-card-stack-image {
+    width: 150px;
+    height: 110px;
+    object-fit: contain;
+}
+.RedCardPanelApplyNow-card-header > h3 {
+    margin: 0px 0px 8px 42px;
+
+    color: #fff;
+    font-size: 56px;
+}
+#RedCardPanelApplyNow-card-body-container-right > p {
+    width: 632px;
+
+    padding-top: 40px;
+
+    font-size: 29px;
+    color: #fff;
+    text-align: center;
+}
+
+/* button */
+.RedCardPanelApplyNow-buttons-container {
+    padding-top: 20px
+}
+#RedCard-CTA-button-white {
+    width: 559.8px;
+    height: 44px;
+    background-color: #fff;
+
+    margin: 0px 24px 10px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+#RedCard-CTA-button-white > a {
+    color: #c00;
+    text-decoration: none;
+}
+#RedCard-CTA-button-white:hover {
+    background-color: #f7f7f7;
+}

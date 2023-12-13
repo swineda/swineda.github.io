@@ -1,0 +1,121 @@
+#SquarePanelHeader-component {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/********** NavBar **********/
+.SquarePanelHeader-navbar-container {
+    width: 100vw;
+
+    padding: 20px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#SquarePanelHeader-logo {
+    width: 152px;
+    margin: 0px 32px;
+}
+
+.SquarePanelHeader-navbar-buttons-container > div{
+    margin: 0px 20px;
+    padding: 4px 8px;
+    border-bottom: 2.5px solid #c00;
+
+    font-size: 19px;
+    color: #666;
+}
+
+
+/********** CTA **********/
+.SquarePanelHeader-CTA-container {
+    width: 100vw;
+    /* max-width: 1400px; */
+
+    background-color: #cb0200;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-weight: 700;
+}
+.SquarePanelHeader-CTA-container > div {
+    width: 100%;
+}
+
+/* CTA Left */
+.SquarePanelHeader-CTA-container-left  {
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* border: 1px solid blue */
+}
+
+.SquarePanelHeader-CTA-container-left > span {
+    margin: 0px 0px 8px;
+
+    font-size: 16px;
+}
+
+.SquarePanelHeader-CTA-container-left > h1 {
+    margin: 0px 0px 8px;
+
+    font-size: 29px;
+}
+.SquarePanelHeader-CTA-buttons-container {
+    display: flex;
+}
+/* button */
+#Square-session-button {
+    width: 192.66px;
+    height: 44px;
+    background-color: #fff;
+
+    margin: 24px 8px 8px 0px;
+    padding: 0px 12px;
+    border: 1px solid #949494;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+#Square-session-button > a {
+    color: #333;
+    text-decoration: none;
+}
+#Square-session-button:hover {
+    background-color: #f7f7f7;
+    border: 1px solid #333;
+}
+
+/* CTA Right */
+.SquarePanelHeader-CTA-container-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#square-mascot {
+    width: 200px;
+    height: 205px;
+    object-fit: cover;
+    padding-right: 80px;
+}

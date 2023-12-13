@@ -1,0 +1,58 @@
+.NavBarMain-wrapper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #6393EF; */
+    background-color: rgb(204, 0, 0);
+}
+
+#NavBarMain-component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    padding: 0px 20px;
+    margin: 0px;
+
+    height: 50px;
+    width: 100vw;
+    max-width: 1400px;
+
+    color: white;
+}
+
+.NavBarMain-left-container {
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 12px;
+}
+
+#navbar-location-button {
+    margin-left: 8px;
+}
+
+.NavBarMain-right-container {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    font-size: 12px;
+}
+.NavBarMain-right-container > p {
+    margin-left: 32px;
+}
+.NavBarMain-right-container > p > a {
+    color: white;
+    text-decoration: none;
+}
+.NavBarMain-right-container > p > a:hover {
+    text-decoration: underline;
+}

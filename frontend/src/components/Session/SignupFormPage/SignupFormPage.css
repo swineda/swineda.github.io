@@ -1,0 +1,40 @@
+#SignupFormPage-component {
+    /* background-color: red; */
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+#session-form-logo {
+    width: 42px;
+    margin-bottom: 5px;
+}
+
+#signup-form-disclaimer-container {
+    width: 508px;
+    margin-top: 15px;
+}
+
+#signup-form-disclaimer-link {
+    color: #666;
+    font-size: 16px;
+}
+#signup-form-disclaimer-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#signup-form-proceed-button {
+    color: #666;
+    font-size: 19px;
+    margin-top: 20px;
+}
+#signup-form-proceed-button:hover {
+    color: black;
+}

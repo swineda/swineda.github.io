@@ -1,0 +1,205 @@
+.RedCardPanelTable-component {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0px 16px;
+    padding: 80px 20px 0px;
+    /* border: 1px solid blue; */
+    /* background-color: aliceblue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/********** CONSTANTS **********/
+#RedCardPanelTable-check-mark-icon {
+    width: 22.92px;
+    height: 22.92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    background-color: rgb(0, 162, 0);
+
+
+    font-size: 14px;
+    color: #fff;
+}
+.check-mark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#RedCardPanelTable-dash-icon {
+    color: rgb(51, 51, 51);
+}
+
+/********** TABLE **********/
+.RedCardPanelTable-table-container{
+    width: 100%;
+}
+
+.RedCardPanelTable-table {
+    width: 100%;
+    gap: 0;
+    border-collapse: collapse;
+}
+
+/* card row */
+#card-images-row {
+    height: 0px;
+}
+#card-images-row > * {
+    background-color: #fff;
+}
+#card-images-row > th {
+    height: 10px;
+    /* background-color: yellow; */
+
+    padding: 0px 28px 20px;
+
+    font-size: 23px;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+}
+#card-images-row > td:last-of-type {
+    padding-right: 32px;
+}
+.card-container {
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* background-color: red; */
+}
+
+.RedCard-table-card-image {
+    width: 200px;
+    height: 127px;
+
+    display: block;
+    object-fit: cover;
+}
+#RedCard-table-single-image {
+    width: 160px;
+    height: 100px;
+
+    display: block;
+    object-fit: cover;
+}
+#RedCard-table-stack-image {
+    object-fit: contain;
+}
+
+/* Table Head */
+.RedCardPanelTable-table > thead {
+    width: 547.2px;
+    height: 90px;
+
+    padding: 28px 0px 28px 32px;
+    background-color: #d6d6d6;
+}
+.RedCardPanelTable-head-row > * {
+    margin: 0px 0px 8px;
+    /* border: 1px solid red; */
+    padding: 34px 28px;
+
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+#RedCardPanelTable-heading-column {
+    max-width: 547.2px;
+    border-radius: 24px 0px 0px 24px;
+    padding: 28px 0px 28px 32px;
+
+    text-align: left;
+}
+.RedCardPanelTable-head-row > td:last-of-type {
+    border-radius: 0px 24px 24px 0px;
+    padding: 28px 32px 28px 0px;
+}
+
+
+/* Table Body */
+tbody > tr > th {
+    max-width: 547.2px;
+    padding: 28px 0px 28px 32px;
+}
+tbody > tr > th > p {
+    width: 510px;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    font-weight: normal;
+}
+tbody > tr > td:last-of-type {
+    padding: 28px 32px 28px 0px;
+}
+
+/* alternating rows */
+.RedCardPanelTable-even-row {
+    background-color: #f7f7f7;
+}
+.RedCardPanelTable-even-row  > th {
+    border-radius: 24px 0px 0px 24px;
+    padding: 28px 0px 28px 32px;
+}
+.RedCardPanelTable-even-row  > td:last-of-type {
+    border-radius: 0px 24px 24px 0px;
+}
+
+#RedCard-every-day-discount {
+    color: #CC0000;
+}
+tbody > tr > td {
+    align-items: center;
+    text-align: center;
+}
+
+/* disclaimer row (last row in table) */
+#table-disclaimer-row > th {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+    color: #666;
+}
+#table-disclaimer-row > th > p{
+    font-size: 12px;
+    color: #666;
+}
+#table-disclaimer-row > td > button {
+    align-self: center;
+
+    display: inline;
+    text-align: center;
+}
+#table-disclaimer-row > td {
+    padding-left: 18px;
+}
+
+/* Page Font Formatting */
+#table-superscript {
+    font-size: 13.33px;
+}
+
+#see-below {
+    text-decoration: underline;
+}

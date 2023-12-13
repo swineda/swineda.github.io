@@ -1,0 +1,20 @@
+#Square-component {
+    width: 100vw;
+    max-width: 1400px;
+
+    /* margin: 0px; */
+    /* padding: 0px 20px; */
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Square-panel-container {
+    width: 100%;
+    max-width: 1400px;
+}
+#Square-panel-container-full-width {
+    padding: 0px;
+}

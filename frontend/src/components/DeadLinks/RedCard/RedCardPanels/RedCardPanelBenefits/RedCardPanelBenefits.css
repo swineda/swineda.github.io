@@ -1,0 +1,143 @@
+.RedCardPanelBenefits-component {
+    width: 100%;
+    max-width: 1400px;
+
+    /* margin: 64px 0px 64px; */
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.RedCardPanelBenefits-panel-container {
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RedCardPanelBenefits-caption-container {
+    margin: 0px 0px 8px;
+    padding: 0px 0px 44px;
+
+    font-size: 45px;
+    font-weight: 700;
+
+    text-align: center;
+}
+#core-benefits {
+    color: #CC0000;
+}
+#more-benefits {
+    width: 680.14px;
+    color: #333;
+}
+#caption-superscript {
+    font-size: 13.3333px;
+    padding: 0px 3px;
+    text-decoration: underline;
+}
+
+/********** CARDS **********/
+.RedCardPanelBenefits-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.RedCardPanelBenefits-card {
+    width: 295px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+.RedCardPanelBenefits-card > p:first-of-type{
+    margin: 28px 0px 0px;
+
+    font-size: 23px;
+    color: #333;
+    font-weight: 700;
+}
+.RedCardPanelBenefits-card > p:last-of-type{
+    width: 221.7px;
+    height: 40px;
+
+    padding: 3px 0px 0px;
+    margin: 0px;
+
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+#wider-details {
+    width: 300px
+}
+
+#icon-container {
+    /* width: 157.14px; */
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+#shopping-basket-icon {
+    /* width: 157.14px; */
+    width: 250px;
+    object-fit: cover;
+}
+#delivery-truck-icon {
+    /* width: 234.14px; */
+    padding-top: 25px;
+    width: 290px;
+}
+#calender-icon {
+    /* width: 155.35px; */
+    width: 255.35px;
+}
+#gifts-icon {
+    /* width: 142.85px; */
+    width: 242.85px;
+}
+#more-benefits-icon {
+    width: 202px;
+}
+#gift-card-benefits-icon {
+    width: 147px;
+}
+
+/********** DISCLAIMER **********/
+.RedCardPanelBenefits-disclaimer-container {
+    width: 100%;
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 14px;
+    color: #666;
+}
+
+
+/********** FORMATTING **********/
+.RedCard-benefits-superscript {
+    padding: 3px;
+
+    font: 12px;
+    text-decoration: underline;
+}
+#RedCard-benefits-foot-note-superscript {
+    padding: 0px 3px;
+
+    font-size: 10.5px;
+    text-decoration: underline;
+}
