@@ -86,6 +86,14 @@ a {
 }
 
 
+video {
+  max-width: 500px;
+}
+
+img {
+  max-width: 500px;
+}
+
 /* LOG */
 .timeline {
   width: 100%;
