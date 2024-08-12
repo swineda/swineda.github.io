@@ -87,11 +87,11 @@ a {
 
 
 video {
-  max-width: 500px;
+  max-width: 50%;
 }
 
 img {
-  max-width: 500px;
+  max-width: 50%;
 }
 
 /* LOG */
